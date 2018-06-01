@@ -242,22 +242,22 @@ section {
     align-items: center;
     justify-content: center;
     position: relative;
-    &:hover {
-      color: $red;
+    &:hover .skills__label {
+      opacity: 1;
     }
   }
   &__label {
-    display: none;
+    opacity: 0;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    left: 110px;
+    top: 80px;
+    width: 270px;
+    height: 160px;
+    background: white;
     z-index: 10;
-    padding-top: 50%;
-    background: rgba(255,255,255,0.8);
-    left: 0;
-    right: 0;
     text-align: center;
     color: $red;
     font-size: 3rem;
+    transition: opacity .5s ease-in-out; 
   }
 }
