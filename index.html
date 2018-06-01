@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="./public/styles/style.css">  
 </head>
 <body>
-  <header class="main-header wrapper">
+  <header class="main-header wrapper" id="header">
     <nav class="main-navigation">
       <ul class="main-navigation__list list">
-        <li><img src="./images/mkc logo -empty.png" alt=""></li>
-        <li><i class="fa fa-bars"></i></li>
+        <li><img src="./images/mkc-logo-empty.png" alt=""></li>
+        <li><button class="menu__btn"><i class="fa fa-bars"></i></button></li>
       </ul>
     </nav>
     <div class="headline">
@@ -25,7 +25,7 @@
       <div class="headline__text">
         <h3 class="headline__text__subheader header-3">01</h>
         <h1 class="header-1 headline__text__header">Kween of Code</h1>
-        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo.</p>
+        <p class="paragraph">Hey, I’m Ky. I’m a front end web developer. My three favourite things are creative problem-solving, RuPaul’s Drag Race, and the feeling of reading a beautiful sentence. My character is best defined by the fact that I always count my groceries before using the speedy lane and that I have yet to meet a dog that doesn't like me. The joy I take in sharing my knowledge means that I will never be cool. My laugh is too loud and too regular for me to ever survive in a horror movie. I genuinely and stubbornly refuse to believe that anything is impossible.</p>
         <p class="paragraph paragraph--uppercase"><a href="#">Explore More <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>
       </div>
     </div>
@@ -38,15 +38,25 @@
         </ul>
       </div>
       <div>
-        <img src="./images/dot-full.png" alt="">
-        <img src="./images/dot-full.png" alt="">
-        <img src="./images/dot-full.png" alt="">       
-        <img src="./images/" alt="">         
+        <!-- <img class="icon__flipped" src="./images/mkc-logo-empty.png" alt=""> -->
       </div>
     </div>
   </header>
+  <div class="menu">
+    <ul>
+      <li><a href="#" class="menu__link menu__item close-btn">X</a></li>
+      <li><a class="menu__item menu__link" href="#header">About</a></li>      
+      <li><a class="menu__item menu__link" href="#recommendem">Recommendem</a></li>
+      <li><a class="menu__item menu__link" href="#dress">Would You Feel Better...?</a></li>
+      <li><a class="menu__item menu__link" href="#wine">Wine ON Dine ON</a></li>
+      <li><a class="menu__item menu__link" href="#taco">I Don't Wanna Taco 'Bout It</a></li>
+      <li><a class="menu__item menu__link" href="#maxshop">MaxShop</a></li>
+      <li><a class="menu__item menu__link" href="#skills">Skills</a></li>            
+      <li><a class="menu__item menu__link" href="#contact">Contact</a></li>      
+    </ul>
+  </div>
   <!-- 01 - Recommendem - React Project -->
-  <section class="wrapper project">
+  <section class="wrapper project" id="recommendem">
     <div>
       <h4 class="header-4">01 - React</h4>
       <h2 class="header-2">Recommendem</h2>
@@ -76,11 +86,11 @@
       </div>
       <div>
         <ul class="project__about__nav">
-          <li class="list__item list__item--light list__item--active project__list__nav">Recommendem</li>
-          <li class="list__item list__item--light project__list__nav">Would You Feel Better...?</li>
-          <li class="list__item list__item--light project__list__nav">Wine ON Dine ON</li>
-          <li class="list__item list__item--light project__list__nav">I Don't Wanna Taco 'Bout It</li>
-          <li class="list__item list__item--light project__list__nav">MaxShop</li>
+          <li class="list__item list__item--light list__item--active"><a class=" project__list__nav" href="#recommendem">Recommendem</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#dress"> Would You Feel Better...?</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#wine">Wine ON Dine ON</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#taco">I Don't Wanna Taco 'Bout It</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#maxshop">MaxShop</a></li>
         </ul>
       </div>
       <div>
@@ -93,7 +103,7 @@
     </div>
   </section>
   <!-- 02 - Would You Feel Better - jQuery -->
-  <section class="wrapper project">
+  <section class="wrapper project" id="dress">
     <div>
       <h4 class="header-4">02 - jQuery</h4>
       <h2 class="header-2">Would You Feel Better If I Wore A Dress</h2>
@@ -123,11 +133,11 @@
       </div>
       <div>
         <ul class="project__about__nav">
-          <li class="list__item list__item--light project__list__nav">Recommendem</li>
-          <li class="list__item list__item--light list__item--active project__list__nav">Would You Feel Better...?</li>
-          <li class="list__item list__item--light project__list__nav">Wine ON Dine ON</li>
-          <li class="list__item list__item--light project__list__nav">I Don't Wanna Taco 'Bout It</li>
-          <li class="list__item list__item--light project__list__nav">MaxShop</li>
+          <li class="list__item list__item--light "><a class=" project__list__nav" href="#recommendem">Recommendem</a></li>
+          <li class="list__item list__item--light  list__item--active"><a class=" project__list__nav" href="#dress"> Would You Feel Better...?</a></li>
+          <li class="list__item list__item--light "><a class=" project__list__nav" href="#wine">Wine ON Dine ON</a></li>
+          <li class="list__item list__item--light "><a class=" project__list__nav" href="#taco">I Don't Wanna Taco 'Bout It</a></li>
+          <li class="list__item list__item--light "><a class=" project__list__nav" href="#maxshop">MaxShop</a></li>
         </ul>
       </div>
       <div>
@@ -141,7 +151,7 @@
     </div>
   </section>
   <!-- 03 - Wine ON Dine ON -->
-  <section class="wrapper project">
+  <section class="wrapper project" id="wine">
     <div>
       <h4 class="header-4">03 - React Group Project</h4>
       <h2 class="header-2">Wine ON Dine ON</h2>
@@ -173,11 +183,11 @@
       </div>
       <div>
         <ul class="project__about__nav">
-          <li class="list__item list__item--light project__list__nav">Recommendem</li>
-          <li class="list__item list__item--light project__list__nav">Would You Feel Better...?</li>
-          <li class="list__item list__item--light list__item--active project__list__nav">Wine ON Dine ON</li>
-          <li class="list__item list__item--light project__list__nav">I Don't Wanna Taco 'Bout It</li>
-          <li class="list__item list__item--light project__list__nav">MaxShop</li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#recommendem">Recommendem</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#dress"> Would You Feel Better...?</a></li>
+          <li class="list__item list__item--light list__item--active"><a class=" project__list__nav" href="#wine">Wine ON Dine ON</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#taco">I Don't Wanna Taco 'Bout It</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#maxshop">MaxShop</a></li>
         </ul>
       </div>
       <div>
@@ -190,7 +200,7 @@
     </div>
   </section>
   <!-- 04 - I Don't Wanna Taco 'Bout It -->
-  <section class="wrapper project">
+  <section class="wrapper project" id="taco">
     <div>
       <h4 class="header-4">04 - jQuery and APIs</h4>
       <h2 class="header-2">I Don't Wanna Taco 'Bout It</h2>
@@ -201,7 +211,7 @@
           <li class="project__nav__item"><i class="fab fa-css3"></i></li>
           <li class="project__nav__item"><i class="fab fa-sass"></i></li>
           <li class="project__nav__item"><i class="fab fa-js"></i></li>
-          <li><img class=" project__nav__item" src="./images/jQuery.png" class="jQuery" alt=""></li>          
+          <li><img class=" project__nav__item jQuery" src="./images/jQuery.png" alt=""></li>          
         </ul>
         <div class="project__nav__link">
           <p class="paragraph paragraph--uppercase"><a href="https://github.com/KweensOfCode/HY-Project4" target=_blank>View on GitHub <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>       
@@ -222,11 +232,11 @@
       </div>
       <div>
         <ul class="project__about__nav">
-          <li class="list__item list__item--light project__list__nav">Recommendem</li>
-          <li class="list__item list__item--light project__list__nav">Would You Feel Better...?</li>
-          <li class="list__item list__item--light project__list__nav">Wine ON Dine ON</li>
-          <li class="list__item list__item--light list__item--active project__list__nav">I Don't Wanna Taco 'Bout It</li>
-          <li class="list__item list__item--light project__list__nav">MaxShop</li>
+          <li class="list__item list__item--light"><a  class=" project__list__nav" href="#recommendem">Recommendem</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#dress"> Would You Feel Better...?</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#wine">Wine ON Dine ON</a></li>
+          <li class="list__item list__item--light list__item--active"><a  class=" project__list__nav"href="#taco">I Don't Wanna Taco 'Bout It</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav"href="#maxshop">MaxShop</a></li>
         </ul>
       </div>
       <div>
@@ -239,7 +249,7 @@
     </div>
   </section>
   <!-- 05 - MaxShop -->
-  <section class="wrapper project">
+  <section class="wrapper project" id="maxshop">
     <div>
       <h4 class="header-4">05 - PSD Convesion</h4>
       <h2 class="header-2">MaxShop</h2>
@@ -269,11 +279,11 @@
       </div>
       <div>
         <ul class="project__about__nav">
-          <li class="list__item list__item--light"><a class=" project__list__nav" href="#">Recommendem</a></li>
-          <li class="list__item list__item--light"><a class=" project__list__nav" href="#">Would You Feel Better...?</a></li>
-          <li class="list__item list__item--light"><a class=" project__list__nav" href="#">Wine ON Dine ON</a></li>
-          <li class="list__item list__item--light"><a class=" project__list__nav" href="#">I Don't Wanna Taco 'Bout It</a></li>
-          <li class="list__item list__item--light list__item--active"><a class=" project__list__nav" href="#">MaxShop</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#recommendem">Recommendem</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#dress">Would You Feel Better...?</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#wine">Wine ON Dine ON</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#taco">I Don't Wanna Taco 'Bout It</a></li>
+          <li class="list__item list__item--light list__item--active"><a class=" project__list__nav" href="#maxshop">MaxShop</a></li>
         </ul>
       </div>
       <div>
@@ -286,7 +296,7 @@
     </div>
   </section>
   
-  <section class="skills">
+  <section class="skills" id="skills">
     <ul class="list skills__list">
       <li class="skills__item list__item"><img src="./images/html5.png" alt=""><p class="paragraph skills__label">HTML</p></li>
       <li class="skills__item list__item"><img src="./images/css3.png" alt=""><p class="paragraph skills__label">CSS</p></li>
@@ -294,7 +304,7 @@
       <li class="skills__item list__item"><img src="./images/gulp.png" alt=""> <p class="paragraph skills__label">Gulp</p></li>
       <li class="skills__item list__item"><img src="./images/javascript.png" alt=""><p class="paragraph skills__label">Javascript</p></li>
       <h2 class="header-2 skills__header">Skills <i class="fa fa-wrench" ></i></h2>
-      <li class="skills__item list__item"><img src="./images/jquery.png" alt=""><p class="paragraph skills__label">jQuery</p></li>
+      <li class="skills__item list__item"><img src="./images/jquery-screen.png" alt=""><p class="paragraph skills__label">jQuery</p></li>
       <li class="skills__item list__item"><img src="./images/github.png" alt=""> <p class="paragraph skills__label">GitHub</p></li>
       <li class="skills__item list__item"><img src="./images/git.png" alt=""> <p class="paragraph skills__label">git</p></li>
       <li class="skills__item list__item"><img src="./images/firebase.png" alt=""><p class="paragraph skills__label">Firebase</p></li>
@@ -302,39 +312,38 @@
     </ul>
   </section>
   <main>
-    <div class="wrapper">
-      <div class="contact__headline">
-        <h2 class="header-2">We collaborate
-          <br> with ambitious
-          <br> brands and people.</h2>
+    <div class="wrapper" id="contact">
+      <div class="contact">
+        <form class="contact__form">
+          <h2 class="header-2 contact__headline">Get in Touch</h2>
+          <p class="paragraph paragraph--large">ky@kweenofcode.com</p>          
+          <fieldset class="contact__field">  
+            <label class="header-4" for="name">Your Name</label>
+            <input class="contact__input input__text" id="name" type="text">
+          </fieldset>
+          <fieldset class="contact__field">
+            <label class="header-4" for="email">Your Email</label>
+            <input class="contact__input input__text" id="email" type="email"> 
+          </fieldset>
+          <fieldset class="contact__field">
+            <label class="header-4" for="msg">Your Message</label>
+            <input class="contact__input input__text" id="msg" type="text">
+          </fieldset>
+          <input class="contact__field contact__submit" type="submit" value="submit">
+        </form>
+        <ul class="contact__list list">
+          <li class="contact__item">
+            <p class="paragraph paragraph--large contact__item--connect">Connect with me on <br> <a class="list__item__link" href="http://www.twitter.com/kweenofcode" target=_blank>twitter</a>,
+              <a class="list__item__link" href="http://www.linkedin.com/in/ky-capstick" target=_blank>linkedin</a>, or
+              <a class="list__item__link" href="http://www.medium.com/@kweenofcode" target=_blank>medium</a>
+            </p>
+          </li>
+        </ul>
       </div>
-      <ul class="list">
-        <li class="contact__item">
-          <ul class="list list--vertical">
-            <li><h4 class="header-4">Start a conversation</h4></li>
-            <li><p class="paragraph paragraph--large">ky@kweenofcode.com</p></li>
-            <li><p class="paragraph paragraph--large list__item--contact">+1 416.220.8159</p></li>
-          </ul>
-        </li>
-        <li>
-          <ul class="list list--vertical">
-            <li>
-              <h4 class="header-4">Social</h4>
-            </li>
-            <li>
-              <p class="paragraph paragraph--large list__item--contact">Connect with me on <a class="list__item__link" href="http://www.facebook.com/messykween" target=_blank>facebook</a>,
-              <br>
-              <a class="list__item__link" href="http://www.twitter.com/kweenofcode" target=_blank>twitter</a>, or
-              <a class="list__item__link" href="http://instagram.com/messykween" target=_blank>instagram</a>
-              </p>
-            </li>
-          </ul>
-        </li>
-      </ul>
     </div>
   </main>
   
-	<script src="public/scripts/main.js"></script>
+	<script src="./public/scripts/main.js"></script>
   
 </body>
 </html>

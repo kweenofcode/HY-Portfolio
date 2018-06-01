@@ -7,7 +7,7 @@
 .header-2 {
     color: $main-black;
 	font-size: 6.25rem;
-	margin: 0 0 100px;
+	margin: 0 0 50px;
 }
 .header-3 {
     color: $main-black;
@@ -26,6 +26,7 @@
 	font-family: $main-font;
 	color: $main-black;
 	font-size: 2.2rem;
+	line-height: 1.6;
 	&--uppercase {
 		@extend %--uppercase;
 	}
@@ -52,7 +53,7 @@
     color: $main-black;
 }
 .list__item, .list__item__link {
-    color: $main-black;
+	color: $main-black;
 }
 .list__item {
 	font-size: 1.125rem;
@@ -64,7 +65,19 @@
 	&--active {
 		color: $main-black;
 	}
+	&__link:hover {
+		color: $red;
+	}
 }
 .fa-bars, .fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js {
     font-size: 4rem;
+}
+.input__text {
+	font-size: 4rem;
+	line-height: 2;
+}
+.menu__item {
+	color: $white;
+	font-size: 5rem;
+	line-height: 1.6;
 }
