@@ -1,0 +1,70 @@
+.header-1 {
+    color: $main-black;
+    font-size: 12rem;
+    font-family: $main-font;
+    font-weight: 700px;
+}
+.header-2 {
+    color: $main-black;
+	font-size: 6.25rem;
+	margin: 0 0 100px;
+}
+.header-3 {
+    color: $main-black;
+		font-size: 2.4rem;
+		letter-spacing: 1px;
+		font-weight: 500;
+}
+.header-4 {
+    color: $light-grey;
+    font-size: 1.5rem;
+    font-weight: 400px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.paragraph {
+	font-family: $main-font;
+	color: $main-black;
+	font-size: 2.2rem;
+	&--uppercase {
+		@extend %--uppercase;
+	}
+	&--large {
+		font-size: 4.2rem;
+		line-height: 6.2rem;
+	}
+	&--small {
+		font-size: 1.125rem;
+	}
+	&--light {
+		color: $light-grey;
+	}
+	&--smaller {
+		font-size: 1.625rem;
+		color: $main-grey;
+		line-height: 1.6;
+		letter-spacing: 1px;
+	}
+}
+.social__item {
+    font-family: $secondary-font;
+    font-size: 1.6rem;
+    color: $main-black;
+}
+.list__item, .list__item__link {
+    color: $main-black;
+}
+.list__item {
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	line-height: 3;
+	&--light {
+		color: $light-grey;
+	}
+	&--active {
+		color: $main-black;
+	}
+}
+.fa-bars, .fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js {
+    font-size: 4rem;
+}

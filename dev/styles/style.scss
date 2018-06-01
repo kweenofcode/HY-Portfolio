@@ -1,0 +1,263 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+@import "setup";
+@import "utils";
+@import "typography";
+
+body {
+  font-size: 62.5%;
+}
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jQuery {
+  width: 70px;
+  height: 70px;
+  &--large {
+    height: 200px;
+    width: 200px;
+  }
+}
+.main-image {
+  height: 1280px;
+  width: 900px;
+}
+.wrapper {
+  max-width: 2556px;
+  margin: 0 auto;
+}
+.main-header {
+  height: 100vh;
+  margin-top: 200px;
+}
+.main-navigation {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  left: 50px;
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+.headline {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  &__img {
+    position: relative;
+    &__photo--second {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+    left: -100px;
+    &__header {
+      margin: 10px;
+    }
+    &__subheader {
+      position: relative;
+      left: 210px;
+      &::before {
+        content:"";
+        display: block;
+        background-color: $main-black;
+        height: 1px;
+        width:197px;
+        position: absolute;
+        top: 50%;
+        left:-200px;
+        transform: translateY(50%);
+      }
+    }
+  }
+}
+.btn {
+  color: $white;
+  background: $main-black;
+  border-radius: 50%;
+  padding: 10px 23px;
+  margin: 0 15px;
+}
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  &--vertical {
+    flex-flow: column wrap;
+  }
+  &__item {
+    margin: 0;
+  }
+}
+.main-social {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  &__list {
+    position: absolute;
+    bottom: 20px;
+    flex-flow: column wrap;
+  }
+}
+.social__link {
+  padding: 50px;
+}
+.social__icon {
+  padding: 50px;
+  &:hover {
+    color: $red;
+  }
+}
+.contact {
+  &__headline {
+    height: 65vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  &__item{
+
+    &:nth-child(-n + 2) {
+    margin-right: 100px;
+    } 
+  }
+}
+.project {
+  position: relative;
+  width: 80%;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0 0;
+    &__item {
+      padding: 0 20px;
+      &:nth-child(-n + 1){
+        padding-left: 0;
+      }
+    }
+    &__link {
+      display: flex;
+      flex: 0 0 50%;
+      justify-content: space-around;
+      align-items: flex-start;
+      a:hover {
+        color: $red;
+      }
+      a:hover .btn {
+        background-color: $red;
+      }
+    }
+  }
+  &__about {
+    display: flex;
+    width: 70%;
+    &__nav {
+      width: 500px;
+      padding-top: 200px;
+      color: $light-grey;
+    }
+    &__number {
+      position: relative;
+      right: 100px;
+      color: $light-grey;
+      &::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: $light-grey;
+        position: absolute;
+        right: -35px;
+        top: 20px;
+      }
+    }
+  }
+  &__counter {
+    position: absolute;
+    transform: rotate(270deg);
+    margin: 0;
+    left: -20px;
+    bottom: 400px;
+  }
+  &__images {
+      display: flex;
+      justify-content: center;
+      margin: 100px;
+    }
+  &__list__nav:hover {
+    color: $red;
+    font-weight: bold;
+  }
+}
+.skills {
+  width: 80%;
+  margin: 0 auto;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 500px);
+  }
+  .fa-github, .fa-css3, .fa-html5, .fa-gulp,
+  .fa-git, .fa-react, .fa-sass, .fa-js-square {
+    font-size: 15rem;
+    margin: 50px;
+  }
+  &__header {
+    grid-column: span 2;
+    text-align: center;
+    // color: $red;
+    transform: translateY(50%)
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &:hover {
+      color: $red;
+    }
+  }
+  &__label {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    padding-top: 50%;
+    background: rgba(255,255,255,0.8);
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: $red;
+    font-size: 3rem;
+  }
+}

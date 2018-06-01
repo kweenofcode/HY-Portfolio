@@ -5,39 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ky Capstick - Front End Developer</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500,700" rel="stylesheet">
   <script defer src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
   <link rel="stylesheet" href="./public/styles/style.css">  
 </head>
 <body>
   <header class="main-header wrapper">
-  <nav class="main-navigation">
-    <ul class="main-navigation__list list">
-      <li><img src="./images/mkc logo -empty.png" alt=""></li>
-      <li><i class="fa fa-bars"></i></li>
-    </ul>
-  </nav>
-  <div class="headline">
-    <div class="headline__img">
-      <img class="main-image"src="./images/2018-spring-ky-capstick-3.jpg" alt="">
-      <img class="headline__img__photo--second" src="./images/01.png" alt="">
-    </div>
-    <div class="headline__text">
-      <h3 class="headline__text__subheader header-3">01</h>
-      <h1 class="header-1 headline__text__header">Kween of Code</h1>
-      <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo.</p>
-      <p class="paragraph paragraph--uppercase">Explore More<a class="btn" href="#"><i class="fa fa-angle-right"></i></a>
-    </div>
-  </div>
-  </header>
-  <footer>
-    <div class="wrapper main-footer">
-      <div>
-      <ul class="main-footer__list list">
-        <li class="list__item--vertical footer__link"><a class="social__item" href="http://www.twitter.com/kweenofcode" target=_blank>TW</a></li>
-        <li class="social__item list__item--vertical footer__link"><a class="social__item" href="http://www.linkedin.com/in/ky-capstick" target=_blank>LI</a></li>
-        <li class="social__item list__item--vertical footer__link"><a class="social__item" href="http://www.instagram.com/messykween" target=_blank>IG</a></li>
+    <nav class="main-navigation">
+      <ul class="main-navigation__list list">
+        <li><img src="./images/mkc logo -empty.png" alt=""></li>
+        <li><i class="fa fa-bars"></i></li>
       </ul>
+    </nav>
+    <div class="headline">
+      <div class="headline__img">
+        <img class="main-image"src="./images/2018-spring-ky-capstick-3.jpg" alt="">
+        <img class="headline__img__photo--second" src="./images/01.png" alt="">
+      </div>
+      <div class="headline__text">
+        <h3 class="headline__text__subheader header-3">01</h>
+        <h1 class="header-1 headline__text__header">Kween of Code</h1>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo.</p>
+        <p class="paragraph paragraph--uppercase"><a href="#">Explore More <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>
+      </div>
+    </div>
+    <div class="wrapper main-social">
+      <div>
+        <ul class="main-social__list list">
+          <li class="list__item--vertical social__link"><a class="social__item social__icon" href="http://www.linkedin.com/in/ky-capstick" target=_blank><i class="fab fa-linkedin"></i></a></li>
+          <li class="list__item--vertical social__link"><a class="social__item social__icon" href="http://www.github.com/kweenofcode" target=_blank><i class="fab fa-github"></i> </a></li>
+          <li class="social__item list__item--vertical social__link"><a class="social__item social__icon" href="http://www.twitter.com/kweenofcode" target=_blank><i class="fab fa-twitter"></i></a></li>
+        </ul>
       </div>
       <div>
         <img src="./images/dot-full.png" alt="">
@@ -45,7 +43,263 @@
         <img src="./images/dot-full.png" alt="">                
       </div>
     </div>
-  </footer>
+  </header>
+  <!-- 01 - Recommendem - React Project -->
+  <section class="wrapper project">
+    <div>
+      <h4 class="header-4">01 - React</h4>
+      <h2 class="header-2">Recommendem</h2>
+      <h4 class="header-4">Built With:</h4>
+      <div class="project__nav">
+        <ul class="list project__nav__item">
+          <li class=" project__nav__item"><i class="fab fa-html5"></i></li>
+          <li class=" project__nav__item"><i class="fab fa-css3"></i></li>
+          <li class=" project__nav__item"><i class="fab fa-sass"></i></li>
+          <li class=" project__nav__item"><i class="fab fa-js"></i></li>
+          <li class=" project__nav__item"><i class="fab fa-gulp"></i></li>
+          <li class=" project__nav__item"><i class="fab fa-react"></i></li>
+        </ul>
+        <div class="project__nav__link">
+          <p class="paragraph paragraph--uppercase"><a href="https://github.com/kweenofcode/reccomendem" target=_blank>View on GitHub <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>       
+          <p class="paragraph paragraph--uppercase"><a href="https://recommendem-af575.firebaseapp.com/" target=_blank>View Live <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>
+        </div>
+      </div>
+    </div>
+    <div class="project__images">
+      <img src="./images/recommendem-desktop.png" alt="">
+      <img src="./images/receommendem-iphone.png" alt="">
+    </div>
+    <div class="project__about">
+      <div>
+        <p class="paragraph paragraph--small project__counter">01 <span class="paragraph--light">/05</span></p>
+      </div>
+      <div>
+        <ul class="project__about__nav">
+          <li class="list__item list__item--light list__item--active project__list__nav">Recommendem</li>
+          <li class="list__item list__item--light project__list__nav">Would You Feel Better...?</li>
+          <li class="list__item list__item--light project__list__nav">Wine ON Dine ON</li>
+          <li class="list__item list__item--light project__list__nav">I Don't Wanna Taco 'Bout It</li>
+          <li class="list__item list__item--light project__list__nav">MaxShop</li>
+        </ul>
+      </div>
+      <div>
+        <p class="paragraph project__about__number">01</p>
+      </div>
+      <div>
+        <h3 class="header-3">Recommendem</h3>
+        <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorem assumenda eligendi, delectus mollitia perspiciatis magni doloribus itaque necessitatibus iste?</p>
+      </div>
+    </div>
+  </section>
+  <!-- 02 - Would You Feel Better - jQuery -->
+  <section class="wrapper project">
+    <div>
+      <h4 class="header-4">02 - jQuery</h4>
+      <h2 class="header-2">Would You Feel Better If I Wore A Dress</h2>
+      <h4 class="header-4">Built With:</h4>
+      <div class="project__nav">
+        <ul class="list project__nav__item">
+          <li class=" project__nav__item"><i class="fab fa-html5"></i></li>
+          <li class=" project__nav__item"><i class="fab fa-css3"></i></li>
+          <li class=" project__nav__item"><i class="fab fa-sass"></i></li>
+          <li><img src="./images/jQuery.png" class="jQuery" alt=""></li>
+        </ul>
+        <div class="project__nav__link">
+          <p class="paragraph paragraph--uppercase"><a href="https://github.com/kweenofcode/wouldyoufeelbetter" target=_blank>View on GitHub <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>       
+          <p class="paragraph paragraph--uppercase"><a href="http://www.wouldyoufeelbetter.com" target=_blank>View Live <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>
+        </div>
+      </div>
+    </div>
+    <div class="project__images">
+      <img src="./images/would-you-feel-better-desktop.png" alt="">
+      <img src="./images/would-you-feel-better-iphone.png" alt="">
+    </div>
+    <div class="project__about">
+      <div>
+        <div>
+          <p class="paragraph paragraph--small project__counter">02 <span class="paragraph--light">/05</span></p>
+        </div>
+      </div>
+      <div>
+        <ul class="project__about__nav">
+          <li class="list__item list__item--light project__list__nav">Recommendem</li>
+          <li class="list__item list__item--light list__item--active project__list__nav">Would You Feel Better...?</li>
+          <li class="list__item list__item--light project__list__nav">Wine ON Dine ON</li>
+          <li class="list__item list__item--light project__list__nav">I Don't Wanna Taco 'Bout It</li>
+          <li class="list__item list__item--light project__list__nav">MaxShop</li>
+        </ul>
+      </div>
+      <div>
+        <p class="paragraph project__about__number">02</p>
+      </div>
+      <div>
+        <h3 class="header-3">Would You Feel Better if I Wore a Dress?</h3>
+        <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorem assumenda eligendi, delectus mollitia perspiciatis
+          magni doloribus itaque necessitatibus iste?</p>
+      </div>
+    </div>
+  </section>
+  <!-- 03 - Wine ON Dine ON -->
+  <section class="wrapper project">
+    <div>
+      <h4 class="header-4">03 - React Group Project</h4>
+      <h2 class="header-2">Wine ON Dine ON</h2>
+      <h4 class="header-4">Built With:</h4>
+      <div class="project__nav">
+      <ul class="list project__nav__item">
+        <li class=" project__nav__item"><i class="fab fa-html5"></i></li>
+        <li class=" project__nav__item"><i class="fab fa-css3"></i></li>
+        <li class=" project__nav__item"><i class="fab fa-sass"></i></li>
+        <li class=" project__nav__item"><i class="fab fa-js"></i></li>
+        <li class=" project__nav__item"><i class="fab fa-gulp"></i></li>
+        <li class=" project__nav__item"><i class="fab fa-react"></i></li>
+        </ul>
+        <div class="project__nav__link">
+          <p class="paragraph paragraph--uppercase"><a href="https://github.com/YummlyWine/HackerYou-Project6" target="_blank">View on GitHub <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>       
+          <p class="paragraph paragraph--uppercase"><a href="https://wine-on-dine-on.firebaseapp.com/" target=_blank>View Live <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>
+        </div>
+      </div>
+    </div>
+    <div class="project__images">
+      <img src="./images/wine-on-desktop.png" alt="">
+      <img src="./images/wine-on-iphone.png" alt="">
+    </div>
+    <div class="project__about">
+      <div>
+        <div>
+          <p class="paragraph paragraph--small project__counter">03 <span class="paragraph--light">/05</span></p>
+        </div>
+      </div>
+      <div>
+        <ul class="project__about__nav">
+          <li class="list__item list__item--light project__list__nav">Recommendem</li>
+          <li class="list__item list__item--light project__list__nav">Would You Feel Better...?</li>
+          <li class="list__item list__item--light list__item--active project__list__nav">Wine ON Dine ON</li>
+          <li class="list__item list__item--light project__list__nav">I Don't Wanna Taco 'Bout It</li>
+          <li class="list__item list__item--light project__list__nav">MaxShop</li>
+        </ul>
+      </div>
+      <div>
+        <p class="paragraph project__about__number">03</p>
+      </div>
+      <div>
+        <h3 class="header-3">Wine ON Dine ON</h3>
+        <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorem assumenda eligendi, delectus mollitia perspiciatis magni doloribus itaque necessitatibus iste?</p>
+      </div>
+    </div>
+  </section>
+  <!-- 04 - I Don't Wanna Taco 'Bout It -->
+  <section class="wrapper project">
+    <div>
+      <h4 class="header-4">04 - jQuery and APIs</h4>
+      <h2 class="header-2">I Don't Wanna Taco 'Bout It</h2>
+      <h4 class="header-4">Built With:</h4>
+      <div class="project__nav">
+        <ul class="list project__nav__item">
+          <li class="project__nav__item"><i class="fab fa-html5"></i></li>
+          <li class="project__nav__item"><i class="fab fa-css3"></i></li>
+          <li class="project__nav__item"><i class="fab fa-sass"></i></li>
+          <li class="project__nav__item"><i class="fab fa-js"></i></li>
+          <li><img class=" project__nav__item" src="./images/jQuery.png" class="jQuery" alt=""></li>          
+        </ul>
+        <div class="project__nav__link">
+          <p class="paragraph paragraph--uppercase"><a href="https://github.com/KweensOfCode/HY-Project4" target=_blank>View on GitHub <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>       
+          <p class="paragraph paragraph--uppercase"><a href="https://kweensofcode.github.io/HY-Project4/" target=_blank>View Live <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>
+        </div>
+      </div>
+    </div>
+    <div class="project__images">
+      <img src="./images/taco-bout-it-desktop.png" alt="">
+      <img src="./images/taco-bout-it-iphone.png" alt="">
+    </div>
+    <div class="project__about">
+      <div>
+        <div>
+          <p class="paragraph paragraph--small project__counter">04 <span class="paragraph--light">/05</span></p>
+        </div>
+        </p>
+      </div>
+      <div>
+        <ul class="project__about__nav">
+          <li class="list__item list__item--light project__list__nav">Recommendem</li>
+          <li class="list__item list__item--light project__list__nav">Would You Feel Better...?</li>
+          <li class="list__item list__item--light project__list__nav">Wine ON Dine ON</li>
+          <li class="list__item list__item--light list__item--active project__list__nav">I Don't Wanna Taco 'Bout It</li>
+          <li class="list__item list__item--light project__list__nav">MaxShop</li>
+        </ul>
+      </div>
+      <div>
+        <p class="paragraph project__about__number">04</p>
+      </div>
+      <div>
+        <h3 class="header-3">I Don't Wanna Taco 'Bout It</h3>
+        <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorem assumenda eligendi, delectus mollitia perspiciatis magni doloribus itaque necessitatibus iste?</p>
+      </div>
+    </div>
+  </section>
+  <!-- 05 - MaxShop -->
+  <section class="wrapper project">
+    <div>
+      <h4 class="header-4">05 - PSD Convesion</h4>
+      <h2 class="header-2">MaxShop</h2>
+      <h4 class="header-4">Built With:</h4>
+      <div class="project__nav">
+        <ul class="list project__nav__item">
+          <li class=" project__nav__item"><i class="fab fa-html5"></i></li>
+          <li class=" project__nav__item"><i class="fab fa-css3"></i></li>
+          <li class=" project__nav__item"><i class="fab fa-js"></i></li>
+        </ul>
+        <div class="project__nav__link">
+          <p class="paragraph paragraph--uppercase"><a href="https://github.com/kweenofcode/maxshop" target=_blank>View on GitHub <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>       
+          <p class="paragraph paragraph--uppercase"><a href="https://kweenofcode.github.io/maxshop/" target=_blank>View Live <buttn class="btn"><i class="fa fa-angle-right"></i></buttn></a>
+        </div>
+      </div>
+    </div>
+    <div class="project__images">
+      <img src="./images/maxshop-desktop.png" alt="">
+      <img src="./images/maxshop-iphone.png" alt="">
+    </div>
+    <div class="project__about">
+      <div>
+        <div>
+          <p class="paragraph paragraph--small project__counter">05 <span class="paragraph--light">/05</span></p>
+        </div>
+        </p>
+      </div>
+      <div>
+        <ul class="project__about__nav">
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#">Recommendem</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#">Would You Feel Better...?</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#">Wine ON Dine ON</a></li>
+          <li class="list__item list__item--light"><a class=" project__list__nav" href="#">I Don't Wanna Taco 'Bout It</a></li>
+          <li class="list__item list__item--light list__item--active"><a class=" project__list__nav" href="#">MaxShop</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="paragraph project__about__number">05</p>
+      </div>
+      <div>
+        <h3 class="header-3">MaxShop</h3>
+        <p class="paragraph paragraph--smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorem assumenda eligendi, delectus mollitia perspiciatis magni doloribus itaque necessitatibus iste?</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="skills">
+    <ul class="list skills__list">
+      <li class="skills__item list__item"><i class="fab fa-github"></i><p class="paragraph skills__label">GitHub</p></li>
+      <li class="skills__item list__item"><i class="fab fa-css3"></i><p class="paragraph skills__label">CSS</p></li>
+      <li class="skills__item list__item"><i class="fab fa-html5"></i><p class="paragraph skills__label">HTML</p></li>
+      <li class="skills__item list__item"><i class="fab fa-gulp"></i><p class="paragraph skills__label">Gulp</p></li>
+      <li class="skills__item list__item"><i class="fab fa-git"></i><p class="paragraph skills__label">Git</p></li>
+      <h2 class="header-2 skills__header">Skills <i class="fa fa-wrench" ></i></h2>
+      <li class="skills__item list__item"><i class="fab fa-react"></i><p class="paragraph skills__label">React</p></li>
+      <li class="skills__item list__item"><i class="fab fa-sass"></i><p class="paragraph skills__label">Sass</p></li>
+      <li class="skills__item list__item"><img src="./images/jQuery.png" alt="" class="jQuery--large"><p class="paragraph skills__label">jQuery</p></li>
+      <li  class="skills__item list__item"><i class="fab fa-js-square"></i><p class="paragraph skills__label">JavaScript</p></li>
+      <li class="skills__item list__item"><img src="./images/firebase.svg" alt=""><p class="paragraph skills__label">Firebase</p></li>
+    </ul>
+  </section>
   <main>
     <div class="wrapper">
       <div class="contact__headline">
@@ -56,15 +310,9 @@
       <ul class="list">
         <li class="contact__item">
           <ul class="list list--vertical">
-            <li>
-              <h4 class="header-4">Start a conversation</h4>
-            </li>
-            <li>
-              <p class="paragraph paragraph--large list__item">ky@kweenofcode.com</p>
-            </li>
-            <li>
-              <p class="paragraph paragraph--large list__item">+1 416.220.8159</p>
-            </li>
+            <li><h4 class="header-4">Start a conversation</h4></li>
+            <li><p class="paragraph paragraph--large">ky@kweenofcode.com</p></li>
+            <li><p class="paragraph paragraph--large list__item--contact">+1 416.220.8159</p></li>
           </ul>
         </li>
         <li>
@@ -73,11 +321,10 @@
               <h4 class="header-4">Social</h4>
             </li>
             <li>
-              <p class="paragraph paragraph--large list__item">Connect with me on
-                <a class="list__item__link" href="http://www.facebook.com/messykween" target=_blank>facebook</a>,
-                <br>
-                <a class="list__item__link" href="http://www.twitter.com/kweenofcode" target=_blank>twitter</a>, or
-                <a class="list__item__link" href="http://instagram.com/messykween" target=_blank>instagram</a>
+              <p class="paragraph paragraph--large list__item--contact">Connect with me on <a class="list__item__link" href="http://www.facebook.com/messykween" target=_blank>facebook</a>,
+              <br>
+              <a class="list__item__link" href="http://www.twitter.com/kweenofcode" target=_blank>twitter</a>, or
+              <a class="list__item__link" href="http://instagram.com/messykween" target=_blank>instagram</a>
               </p>
             </li>
           </ul>
@@ -85,6 +332,7 @@
       </ul>
     </div>
   </main>
+  
 	<script src="public/scripts/main.js"></script>
   
 </body>
