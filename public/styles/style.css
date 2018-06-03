@@ -262,16 +262,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       font-size: 1.4rem;
       line-height: 2.5; } }
 
-.fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js, .fa-envelope {
+.fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js, .fa-envelope, .fa-medium {
   font-size: 8rem; }
   @media (max-width: 2500px) {
-    .fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js, .fa-envelope {
+    .fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js, .fa-envelope, .fa-medium {
       font-size: 6rem; } }
   @media (max-width: 1610px) {
-    .fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js, .fa-envelope {
+    .fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js, .fa-envelope, .fa-medium {
       font-size: 4rem; } }
   @media (max-width: 1610px) {
-    .fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js, .fa-envelope {
+    .fa-js-square, .fa-sass, .fa-react, .fa-git, .fa-gulp, .fa-html5, .fa-css3, .fa-github, .fa-twitter, .fa-linkedin, .fa-js, .fa-envelope, .fa-medium {
       font-size: 3rem; } }
 
 .input__text {
