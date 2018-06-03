@@ -5,13 +5,20 @@ font-family: 'Roboto Condensed', sans-serif; */
 @import "utils";
 @import "typography";
 
-body {
+div img {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+textarea {
+  resize: none;
+}
+html{
   font-size: 62.5%;
 }
 img {
   max-width: 100%;
   display: block;
-  margin: 0 auto;
   object-fit: cover;
 }
 ul {
@@ -20,10 +27,22 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  @media (max-width: $sixth-breakpoint) {
+    color: $red
+  }
 }
 section {
   min-height: 100vh;
   padding-top: 100px;
+  @media (max-width: $fourth-breakpoint) {
+		padding-top: 0px;
+  }
+}
+.logo {
+  max-width: 150px;
+  @media (max-width: $fifth-breakpoint) {
+    display: none;
+  }
 }
 .menu {
   display: flex;
@@ -46,6 +65,22 @@ section {
   &__btn {
     background: none;
     border: none;
+    padding: 25px;
+    right: 220px;
+    position: fixed;
+    z-index: 999;
+    &:hover {
+      color: $red;
+    }
+    @media (max-width: $second-breakpoint) {
+      right: 135px;
+    }
+    @media (max-width: $fourth-breakpoint) {
+		  right: 10px;
+    }
+    @media (max-width: $fourth-breakpoint) {
+		  right: 0;
+    }
   }
   &.show {
     top: 0;
@@ -53,8 +88,15 @@ section {
 }
 .close-btn {
   position: absolute;
-  top: 50px;
-  right: 100px;
+  right: 220px;
+  padding: 25px;
+  top: 20px;
+  @media (max-width: $second-breakpoint) {
+    right: 135px;
+  }
+  @media (max-width: $fourth-breakpoint) {
+    right: 10px;
+  }
 }
 .list {
   list-style: none;
@@ -64,31 +106,55 @@ section {
 .jQuery {
   width: 70px;
   height: 70px;
+  @media (max-width: $first-breakpoint) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (max-width: $third-breakpoint) {
+    width: 30px;
+    height: 30px;
+  }
 }
 .main-image {
-  height: 1280px;
-  width: 900px;
+  height: 80vh;
+  width: 90%;
   position: relative;
 }
 .wrapper {
   max-width: 2556px;
+  width: 85%;
   margin: 0 auto;
 }
 .main-header {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 200px;
   position: relative;
+  @media (max-width: $first-breakpoint) {
+		padding-top: 150px;
+  }
+  @media (max-width: $second-breakpoint) {
+		padding-top: 100px;
+  }
+  @media (max-width: $fifth-breakpoint) {
+    padding-top: 50px
+  }
 }
 .main-navigation {
   position: absolute;
   top: 100px;
-  right: 0;
-  left: 0;
+  right: -50px;
+  left: -60px;
   &__list {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
+  @media (max-width: $first-breakpoint) {
+		top: 50px;
+  }
+  @media (max-width: $second-breakpoint) {
+		top: 20px;
+	}
 }
 .headline {
   display: flex;
@@ -99,6 +165,12 @@ section {
     flex-basis: 40%;
     position: relative;
     left: 100px;
+    @media (max-width: $fourth-breakpoint) {
+		  flex-basis: 50%;
+    }
+    @media (max-width: $fifth-breakpoint) {
+      left: 0;
+    }
     &__photo--second {
       position: absolute;
       top: 5%;
@@ -110,12 +182,17 @@ section {
     flex-flow: column wrap;
     justify-content: center;
     position: relative;
-    width: 40%;
+    flex-basis: 40%;
     left: 0px;
-    padding-left: 50px;
-    background-color: rgba(255,255,255,0.4);    
+    padding-left: 50px; 
     &__header {
       margin: 10px;
+      @media (max-width: $sixth-breakpoint) {
+        position: absolute;
+        top: -180px;
+        margin: 0;
+        text-shadow: 0 0 1px $red;
+      }
     }
     &__subheader {
       position: relative;
@@ -132,21 +209,48 @@ section {
         transform: translateY(50%);
       }
     }
+    @media (max-width: $third-breakpoint) {
+		  padding-left: 70px;
+    }
+    @media (max-width: $fifth-breakpoint) {
+      padding-left: 0;
+    }
+    @media (max-width: $fifth-breakpoint) {
+      padding-right: 30px;
+    }
+  }
+  @media (max-width: $fourth-breakpoint) {
+		justify-content: flex-start;
+  }
+  @media (max-width: $sixth-breakpoint) {
+    display: block;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
   }
 }
 .btn {
+  justify-content: center;
+  align-items: center;
   color: $white;
   background: $main-black;
   border-radius: 50%;
   padding: 10px 23px;
   margin: 0 15px;
+  transition: transform .5s ease-in-out;
+  &:hover {
+    transform: rotate(90deg); 
+    background: $red;
+  }
+  @media (max-width: $first-breakpoint) {
+    padding: 8px 15px;
+  }
+  @media (max-width: $fourth-breakpoint) {
+		display: none;
+  }
 }
 .list {
   display: flex;
   flex-flow: row wrap;
-  &--vertical {
-    flex-flow: column wrap;
-  }
   &__item {
     margin: 0;
   }
@@ -154,32 +258,48 @@ section {
 .main-social {
   position: absolute;
   display: flex;
-  justify-content: space-between;
   width: 100%;
   bottom: 30px;
+  left: -50px;
   &__list {
     position: absolute;
     bottom: 0;
     flex-flow: column wrap;
+    align-items: flex-start;
+    padding: 0;
+    @media (max-width: $fifth-breakpoint) {
+      flex-direction: row;
+    }
+  }
+  @media (max-width: $fifth-breakpoint) {
+    bottom: 20px;
+    left: -20px;
+  }
+  @media (max-width: $sixth-breakpoint) {
+    bottom: 0;
   }
 }
-.icon__flipped {
-  transform: rotate(180deg)
-}
 .social__link {
-  padding: 50px;
+  padding: 50px 0;
+  @media (max-width: $third-breakpoint) {
+    padding: 20px 0;
+  }
 }
 .social__icon {
   padding: 50px;
   &:hover {
     color: $red;
   }
+  @media (max-width: $fifth-breakpoint) {
+    padding: 20px;
+  }
 }
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: flex-end;
   padding-bottom: 100px;
+  position: relative;
   &__headline {
     display: flex;
     justify-content: flex-start;
@@ -188,11 +308,24 @@ section {
   &__form {
     flex: 0 0 50%;
     padding: 0 100px 0 0;
+    @media (max-width: $fourth-breakpoint) {
+      flex: 1 1 100%;
+      padding: 0;
+    }
   }
   &__input {
     border: none;
     width: 100%;
     border-bottom: 5px solid $main-black;
+    @media (max-width: $third-breakpoint) {
+		  border-bottom: 3px solid $main-black;
+	  }
+    &:focus {
+      border-bottom: 5px solid $red;
+      @media (max-width: $third-breakpoint) {
+		    border-bottom: 3px solid $red;
+	    }
+    }
   }
   &__item {
     text-align: right;
@@ -207,29 +340,82 @@ section {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    @media(max-width: $first-breakpoint) {
+      margin-bottom: 0px;
+    }
   }
   &__list {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    @media (max-width: $fourth-breakpoint) {
+      position: absolute;
+      right: 5px; 
+      bottom: 45px;
+    }
+    @media (max-width: $sixth-breakpoint) {
+      position: static;
+      margin-top: 25px;
+    }
   }
   &__submit {
     font-size: 5rem;
-    padding: 50px;
     text-align: left;
     background: $white;
     border: 5px solid $main-black;
-    margin: 80px 0 0;
+    margin: 80px 0 0 10px;
+    padding: 50px;
+    @media (max-width: $first-breakpoint) {
+      font-size: 4rem;
+      padding: 30px 50px;
+    }
+    @media (max-width: $third-breakpoint) {
+      font-size: 2rem;
+      padding: 20px 30px;
+      border: 3px solid $main-black;
+      margin-top: 30px;
+    }
+    @media (max-width: $fourth-breakpoint) {
+      margin-top: 50px;
+    }
     &:hover {
       color: $red;
-      border: 5px solid $red;
+      border: 3px solid $red;
     }
+  }
+  &__email {
+    display: flex;
+    margin: 50px 0;
+    align-items: center;
+    &__address {
+      margin: 0 0 0 20px;
+      @media (max-width: $sixth-breakpoint) {
+        display: none;
+      }
+    }
+    &:hover, &__address:hover {
+    color: $red;
+    }
+    @media (max-width: $third-breakpoint) {
+      margin: 20px 0;
+    }
+  }
+  @media (max-width: $first-breakpoint) {
+		padding: 0 45px 50px 45px;
+  }
+  @media (max-width: $third-breakpoint) {
+		padding-bottom: 50px;
+  }
+  @media (max-width: $sixth-breakpoint) {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 .project {
   position: relative;
-  width: 80%;
+  width: 85%;
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -238,6 +424,9 @@ section {
       padding: 0 20px;
       &:nth-child(-n + 1){
         padding-left: 0;
+      }
+      @media(max-width: $third-breakpoint) {
+        padding: 0 10px 0 0;
       }
     }
     &__link {
@@ -250,20 +439,39 @@ section {
       }
       a:hover .btn {
         background-color: $red;
+        transform: rotate(90deg);      
       }
+      @media (max-width: $sixth-breakpoint) {
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-around;
+      }
+    }
+    @media (max-width: $fourth-breakpoint) {
+		  padding: 0px;
+    }
+    @media (max-width: $sixth-breakpoint) {
+      flex-direction: column;
     }
   }
   &__about {
     display: flex;
-    width: 70%;
+    width: 90%;
+    @media (max-width: $fifth-breakpoint) {
+      margin-left: 50px;
+    }
     &__nav {
       width: 500px;
-      padding-top: 200px;
+      padding: 0;
       color: $light-grey;
+      @media (max-width: $fifth-breakpoint) {
+        display: none;
+      }
     }
     &__number {
       position: relative;
-      right: 100px;
+      right: 50px;
+      top: -10px;
       color: $light-grey;
       &::before {
         content: "";
@@ -273,22 +481,33 @@ section {
         background-color: $light-grey;
         position: absolute;
         right: -35px;
-        top: 20px;
+        top: 18px;
+        @media (max-width: $third-breakpoint) {
+          top: 15px;
+        }
+      }
+      @media (max-width: $sixth-breakpoint) {
+        display: none;
+      }
+    }
+    @media (max-width: $sixth-breakpoint) {
+      width: 100%;
+      margin: 0;
+      padding: 15px;
+    }
+  }
+  &__images {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    &__mobile {
+      align-self: center;
+      @media (max-width: $sixth-breakpoint) {
+        display: none;
       }
     }
   }
-  &__counter {
-    position: absolute;
-    transform: rotate(270deg);
-    margin: 0;
-    left: -20px;
-    bottom: 400px;
-  }
-  &__images {
-      display: flex;
-      justify-content: center;
-      margin: 100px;
-    }
   &__list__nav{
     padding: 15px 20px 15px 0;
     &:hover {
@@ -300,9 +519,20 @@ section {
 .skills {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &__list {
     display: grid;
-    grid-template-columns: repeat(4, 500px);
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(3, minmax(20vh, maxcontent));
+    justify-content: center;
+    @media (max-width: $fifth-breakpoint) {
+      grid-template-columns: repeat(3, 30%);
+    }
+    @media (max-width: $fifth-breakpoint) {
+      grid-template-columns: repeat(2, 50%);
+    }
   }
   .fa-github, .fa-css3, .fa-html5, .fa-gulp,
   .fa-git, .fa-react, .fa-sass, .fa-js-square {
@@ -314,7 +544,13 @@ section {
     grid-column: span 2;
     justify-content: center;
     align-items: center;
-    // transform: translateY(50%)
+    color: $main-grey;
+    @media (max-width: $fifth-breakpoint) {
+      grid-row: 2;
+    }
+    @media (max-width: $fifth-breakpoint) {
+      grid-row: 3;
+    }
   }
   &__item {
     display: flex;
@@ -328,15 +564,21 @@ section {
   &__label {
     opacity: 0;
     position: absolute;
-    left: 110px;
-    top: 80px;
-    width: 270px;
-    height: 160px;
+    width: 100%;
+    left: 0;
+    top: 65%;
+    right: 0;
     background: white;
     z-index: 10;
     text-align: center;
-    color: $red;
-    font-size: 3rem;
+    color: $main-grey;
     transition: opacity .5s ease-in-out; 
+    @media (max-width: $fifth-breakpoint) {
+      opacity: 1;
+      color: $main-black
+    }
+  }
+    @media (max-width: $fifth-breakpoint) {
+    margin-bottom: 100px;
   }
 }
