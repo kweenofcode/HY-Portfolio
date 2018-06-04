@@ -1,0 +1,160 @@
+.main-header {
+  min-height: 100vh;
+  padding-top: 200px;
+  position: relative;
+  @media (max-width: $first-breakpoint) {
+		padding-top: 150px;
+  }
+  @media (max-width: $second-breakpoint) {
+		padding-top: 100px;
+  }
+  @media (max-width: $fifth-breakpoint) {
+    padding-top: 50px
+  }
+}
+.main-navigation {
+  position: absolute;
+  top: 100px;
+  right: -50px;
+  left: -60px;
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  @media (max-width: $first-breakpoint) {
+		top: 50px;
+  }
+  @media (max-width: $second-breakpoint) {
+		top: 20px;
+  }
+  &__logo {
+    max-width: 150px;
+    @media (max-width: $fifth-breakpoint) {
+      display: none;
+    }
+  }
+}
+.headline {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  &__img {
+    flex: 0 0 35%;
+    position: relative;
+    left: 50px;
+    height: 80vh;
+    width: 90%;
+    position: relative;
+    object-position: top;
+    @media (max-width: $fourth-breakpoint) {
+      left: 50px;
+      flex-basis: 50%;
+      margin-left: 80px;
+    }
+    @media (max-width: $fifth-breakpoint) {
+      left: 0;
+      margin: 0 20px 0 0;
+    }
+    @media (max-width: $sixth-breakpoint) {
+      object-position: 0px 0;
+      height: 400px;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: relative;
+    flex-basis: 40%;
+    left: 0px;
+    padding-left: 50px; 
+    &__header {
+      @media (max-width: $sixth-breakpoint) {
+        position: absolute;
+        top: -180px;
+        margin: 0;
+        text-shadow: 0 0 1px $red;
+      }
+    }
+    &__subheader {
+      position: relative;
+      left: 210px;
+      &::before {
+        content:"";
+        display: block;
+        background-color: $main-black;
+        height: 1px;
+        width:197px;
+        position: absolute;
+        top: 50%;
+        left:-200px;
+        transform: translateY(50%);
+      }
+    }
+    @media (max-width: $third-breakpoint) {
+		  padding-left: 70px;
+    }
+    @media (max-width: $fifth-breakpoint) {
+      padding-left: 0;
+    }
+    @media (max-width: $fifth-breakpoint) {
+      padding-right: 30px;
+    }
+  }
+  @media (max-width: $fourth-breakpoint) {
+		justify-content: flex-start;
+  }
+  @media (max-width: $sixth-breakpoint) {
+    display: block;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+  }
+}
+.main-social {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 30px;
+  left: -50px;
+  &__list {
+    position: absolute;
+    bottom: 0px;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding: 0;
+    @media (max-width: $third-breakpoint) {
+      bottom: 5px;
+    }
+    @media (max-width: $fifth-breakpoint) {
+      flex-direction: row;
+    }
+    &__icon {
+      padding: 30px;
+      color: $main-black;
+      transition: color .5s ease-in-out;
+      &:hover {
+        color: $red;
+      }
+      @media (max-width: $first-breakpoint) {
+        padding: 20px;
+      }
+      @media (max-width: $sixth-breakpoint) {
+        padding: 10px;
+      }
+    }
+    &__item {
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (max-width: $fifth-breakpoint) {
+    bottom: 20px;
+    left: -20px;
+  }
+  @media (max-width: $sixth-breakpoint) {
+    bottom: 0;
+  }
+}

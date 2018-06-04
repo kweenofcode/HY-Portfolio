@@ -1,1 +1,10 @@
 node_modules
+.DS_Store
+*.config
+*.zip
+*.rar
+*.txt
+*.psd
+node_modules/
+public/**/*
+package-lock.json

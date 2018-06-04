@@ -1,0 +1,57 @@
+.menu {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -100%;
+  right: 0;
+  bottom: 0;
+  background: $main-black;
+  align-items: center;
+  transition: top .5s ease-in-out;
+  z-index: 999;
+  &__link {
+    padding: 20px 0;
+    &:hover {
+      color: $red;
+    }
+  }
+  &__btn {
+    background: none;
+    border: none;
+    padding: 25px;
+    right: 220px;
+    position: fixed;
+    z-index: 999;
+    &:hover {
+      color: $red;
+    }
+    @media (max-width: $second-breakpoint) {
+      right: 135px;
+    }
+    @media (max-width: $fourth-breakpoint) {
+		  right: 10px;
+    }
+    @media (max-width: $fourth-breakpoint) {
+		  right: 0;
+    }
+    @media (max-width: $fourth-breakpoint) {
+		  top: 22px;
+    }
+  }
+  &__close-btn {
+    position: absolute;
+    right: 220px;
+    padding: 25px;
+    top: 20px;
+    @media (max-width: $second-breakpoint) {
+      right: 135px;
+    }
+    @media (max-width: $fourth-breakpoint) {
+      right: 10px;
+    }
+  }
+  &.show {
+    top: 0;
+  }
+}

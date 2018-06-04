@@ -1,0 +1,123 @@
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 100px;
+  position: relative;
+  &__headline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  &__form {
+    flex: 0 0 50%;
+    padding: 0 100px 0 0;
+    @media (max-width: $fourth-breakpoint) {
+      flex: 1 1 100%;
+      padding: 0;
+    }
+  }
+  &__input {
+    border: none;
+    width: 100%;
+    border-bottom: 5px solid $main-black;
+    @media (max-width: $third-breakpoint) {
+		  border-bottom: 3px solid $main-black;
+	  }
+    &:focus {
+      border-bottom: 5px solid $red;
+      @media (max-width: $third-breakpoint) {
+		    border-bottom: 3px solid $red;
+	    }
+    }
+  }
+  &__item {
+    text-align: right;
+    align-items: flex-end;
+    padding: 0;
+    &--connect{
+      margin: 0;
+    }
+  }
+  &__field {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 0;
+    @media(max-width: $first-breakpoint) {
+      margin-bottom: 0px;
+    }
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    @media (max-width: $fourth-breakpoint) {
+      position: absolute;
+      right: 5px; 
+      bottom: 45px;
+    }
+    @media (max-width: $sixth-breakpoint) {
+      display: block;
+      position: static;
+      padding: 20px 0;
+    }
+  }
+  &__submit {
+    font-size: 5rem;
+    text-align: left;
+    background: $white;
+    border: 5px solid $main-black;
+    margin: 80px 0 0 0;
+    padding: 50px;
+    @media (max-width: $first-breakpoint) {
+      font-size: 4rem;
+      padding: 30px 50px;
+    }
+    @media (max-width: $third-breakpoint) {
+      font-size: 2rem;
+      padding: 20px 30px;
+      border: 3px solid $main-black;
+      margin-top: 30px;
+    }
+    @media (max-width: $fourth-breakpoint) {
+      margin-top: 50px;
+    }
+    &:hover {
+      color: $red;
+      border: 3px solid $red;
+    }
+  }
+  &__email {
+    display: flex;
+    margin: 50px 0;
+    align-items: center;
+    &__address {
+      margin: 0 0 0 20px;
+      @media (max-width: $sixth-breakpoint) {
+        display: none;
+      }
+    }
+    &:hover, &__address:hover {
+    color: $red;
+    }
+    @media (max-width: $third-breakpoint) {
+      margin: 20px 0;
+    }
+  }
+  @media (max-width: $first-breakpoint) {
+		padding: 0 45px 50px 45px;
+  }
+  @media (max-width: $third-breakpoint) {
+		padding: 0 0 50px 0;
+  }
+  @media (max-width: $sixth-breakpoint) {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    padding: 0;
+  }
+}

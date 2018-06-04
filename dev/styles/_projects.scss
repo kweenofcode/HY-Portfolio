@@ -1,0 +1,103 @@
+.project {
+  position: relative;
+  width: 85%;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0 0;
+    &__item {
+      padding: 0 20px;
+      &:nth-child(-n + 1){
+        padding-left: 0;
+      }
+      @media(max-width: $third-breakpoint) {
+        padding: 0 10px 0 0;
+      }
+    }
+    &__link {
+      display: flex;
+      flex: 0 0 50%;
+      justify-content: space-around;
+      align-items: flex-start;
+      a:hover {
+        color: $red;
+      }
+      a:hover .btn {
+        background-color: $red;
+        transform: rotate(90deg);      
+      }
+      @media (max-width: $sixth-breakpoint) {
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-around;
+      }
+    }
+    @media (max-width: $fourth-breakpoint) {
+		  padding: 0px;
+    }
+    @media (max-width: $sixth-breakpoint) {
+      flex-direction: column;
+    }
+  }
+  &__about {
+    display: flex;
+    width: 90%;
+    @media (max-width: $fifth-breakpoint) {
+      margin-left: 50px;
+    }
+    &__nav {
+      width: 500px;
+      padding: 0;
+      color: $light-grey;
+      @media (max-width: $fifth-breakpoint) {
+        display: none;
+      }
+    }
+    &__number {
+      position: relative;
+      right: 50px;
+      top: -10px;
+      color: $light-grey;
+      &::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: $light-grey;
+        position: absolute;
+        right: -35px;
+        top: 18px;
+        @media (max-width: $third-breakpoint) {
+          top: 15px;
+        }
+      }
+      @media (max-width: $sixth-breakpoint) {
+        display: none;
+      }
+    }
+    @media (max-width: $sixth-breakpoint) {
+      width: 100%;
+      margin: 0;
+      padding: 15px;
+    }
+  }
+  &__images {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    &__mobile {
+      align-self: center;
+      @media (max-width: $sixth-breakpoint) {
+        display: none;
+      }
+    }
+  }
+  &__list__nav{
+    padding: 15px 20px 15px 0;
+    &:hover {
+      color: $red;
+      font-weight: bold;
+    }
+  }
+}
