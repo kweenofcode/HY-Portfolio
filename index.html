@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500,700" rel="stylesheet">
   <script defer src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
   <link rel="stylesheet" href="./public/styles/style.css">  
+  <link type="image/png" href="./images/mkc-logo-empty.png" rel="icon">  
 </head>
 <body>
   <header class="main-header wrapper" id="header">
@@ -18,7 +19,8 @@
       </ul>
     </nav>
     <div class="headline">
-      <img class="headline__img"src="./images/2018-spring-ky-capstick-3.jpg" alt="">
+      <img class="headline__img headline__img--first"src="./images/2018-spring-ky-capstick-3.jpg" alt="">
+      <img class="headline__img headline__img--alternate" src="./images/1_FullRes.jpg" alt="">
       <div class="headline__text">
         <h3 class="headline__text__subheader header-3">10</h>
         <h1 class="header-1 headline__text__header">Kween <br/> of Code</h1>
@@ -65,7 +67,7 @@
           <li class=" project__nav__item"><i class="fab fa-react"></i></li>
         </ul>
         <div class="project__nav__link">
-          <p class="paragraph paragraph--uppercase"><a href="https://github.com/kweenofcode/reccomendem" target=_blank>View on GitHub <button class="btn"><i class="fa fa-angle-right"></i></button></a>       
+          <p class="paragraph paragraph--uppercase"><a href="https://github.com/kweenofcode/reccomendem" target=_blank>View Code <button class="btn"><i class="fa fa-angle-right"></i></button></a>       
           <p class="paragraph paragraph--uppercase"><a href="https://recommendem-af575.firebaseapp.com/" target=_blank>View Live <button class="btn"><i class="fa fa-angle-right"></i></button></a>
         </div>
       </div>
@@ -83,8 +85,8 @@
           <li class="list__item list__item--light"><a class=" project__list__nav" href="#maxshop">MaxShop</a></li>
         </ul>
       </div>
-      <div>
-        <p class="paragraph project__about__number">01</p>
+      <div class=" project__about__number">
+        <p class="paragraph">01</p>
       </div>
       <div>
         <h3 class="header-3">Recommendem</h3>
@@ -106,7 +108,7 @@
           <li><img src="./images/jQuery.png" class="jQuery" alt=""></li>
         </ul>
         <div class="project__nav__link">
-          <p class="paragraph paragraph--uppercase"><a href="https://github.com/kweenofcode/wouldyoufeelbetter" target=_blank>View on GitHub <button class="btn"><i class="fa fa-angle-right"></i></button></a>       
+          <p class="paragraph paragraph--uppercase"><a href="https://github.com/kweenofcode/wouldyoufeelbetter" target=_blank>View Code<button class="btn"><i class="fa fa-angle-right"></i></button></a>       
           <p class="paragraph paragraph--uppercase"><a href="./would-you-feel-better.html" target=_blank>View Live <button class="btn"><i class="fa fa-angle-right"></i></button></a>
         </div>
       </div>
@@ -124,8 +126,8 @@
           <li class="list__item list__item--light "><a class=" project__list__nav" href="#maxshop">MaxShop</a></li>
         </ul>
       </div>
-      <div>
-        <p class="paragraph project__about__number">02</p>
+      <div class="project__about__number">
+        <p class="paragraph">02</p>
       </div>
       <div>
         <h3 class="header-3">Would You Feel Better if I Wore a Dress?</h3>
@@ -148,7 +150,7 @@
         <li class=" project__nav__item"><i class="fab fa-react"></i></li>
         </ul>
         <div class="project__nav__link">
-          <p class="paragraph paragraph--uppercase"><a href="https://github.com/YummlyWine/HackerYou-Project6" target="_blank">View on GitHub <button class="btn"><i class="fa fa-angle-right"></i></button></a>       
+          <p class="paragraph paragraph--uppercase"><a href="https://github.com/YummlyWine/HackerYou-Project6" target="_blank">View Code<button class="btn"><i class="fa fa-angle-right"></i></button></a>       
           <p class="paragraph paragraph--uppercase"><a href="https://wine-on-dine-on.firebaseapp.com/" target=_blank>View Live <button class="btn"><i class="fa fa-angle-right"></i></button></a>
         </div>
       </div>
@@ -166,8 +168,8 @@
           <li class="list__item list__item--light"><a class=" project__list__nav" href="#maxshop">MaxShop</a></li>
         </ul>
       </div>
-      <div>
-        <p class="paragraph project__about__number">03</p>
+      <div class="project__about__number">
+        <p class="paragraph">03</p>
       </div>
       <div>
         <h3 class="header-3">Wine ON Dine ON</h3>
@@ -188,7 +190,7 @@
           <li class=" project__nav__item"><i class="fab fa-js"></i></li>
         </ul>
         <div class="project__nav__link">
-          <p class="paragraph paragraph--uppercase"><a href="https://github.com/kweenofcode/maxshop" target=_blank>View on GitHub <button class="btn"><i class="fa fa-angle-right"></i></button></a>       
+          <p class="paragraph paragraph--uppercase"><a href="https://github.com/kweenofcode/maxshop" target=_blank>View Code<button class="btn"><i class="fa fa-angle-right"></i></button></a>
           <p class="paragraph paragraph--uppercase"><a href="./maxshop.html" target=_blank>View Live <button class="btn"><i class="fa fa-angle-right"></i></button></a>
         </div>
       </div>
@@ -206,8 +208,8 @@
           <li class="list__item list__item--light list__item--active"><a class=" project__list__nav" href="#maxshop">MaxShop</a></li>
         </ul>
       </div>
-      <div>
-        <p class="paragraph project__about__number">04</p>
+      <div class="project__about__number">
+        <p class="paragraph">04</p>
       </div>
       <div>
         <h3 class="header-3">MaxShop</h3>
@@ -248,7 +250,7 @@
           </fieldset>
           <fieldset class="contact__field">
             <label class="header-4" for="msg">Your Message</label>
-            <textarea class="contact__input input__text" id="msg" name="message"cols="30" rows="5"></textarea>
+            <textarea class="contact__input input__text" id="msg" name="message"cols="30" rows="4"></textarea>
           </fieldset>
           <input class="contact__field contact__submit" type="submit" value="submit">
         </form>

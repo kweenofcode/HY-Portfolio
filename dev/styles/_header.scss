@@ -41,44 +41,50 @@
   justify-content: center;
   position: relative;
   &__img {
-    flex: 0 0 35%;
+    flex: 0 0 50%;
     position: relative;
-    left: 50px;
+    left: 100px;
     margin-right: 20px;
     height: 80vh;
     width: 90%;
     position: relative;
     object-position: top;
-    @media (max-width: $fourth-breakpoint) {
-      left: 50px;
-      flex-basis: 50%;
-      margin-left: 50px;
+    &--alternate {
+      display: none;
     }
     @media (max-width: $fifth-breakpoint) {
       left: 0;
-      margin: 0 20px 0 0;
-      padding-top: 110px;
+      margin: 0 auto;
       object-position: 0 -40px;
     }
     @media (max-width: $sixth-breakpoint) {
+      padding-top: 100px;
       height: 450px;
+      object-position: center;
+      &--first {
+        display: none;
+      }
+      &--alternate {
+        display: block;
+      }
     }
-    
   }
   &__text {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     position: relative;
-    flex-basis: 50%;
-    left: 0px;
+    flex-basis: 40%;
+    left: 25px;
     padding-left: 50px;
+    @media (max-width: $sixth-breakpoint) {
+      left: 0;
+    }
     &__header {
       @media (max-width: $sixth-breakpoint) {
         position: absolute;
-        top: -459px;
-        margin: 0;
-        text-shadow: 0 0 1px $red;
+        display: block;
+        top: -470px;
       }
     }
     &__subheader {
