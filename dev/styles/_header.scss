@@ -37,13 +37,14 @@
 }
 .headline {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   position: relative;
   &__img {
     flex: 0 0 35%;
     position: relative;
     left: 50px;
+    margin-right: 20px;
     height: 80vh;
     width: 90%;
     position: relative;
@@ -51,36 +52,41 @@
     @media (max-width: $fourth-breakpoint) {
       left: 50px;
       flex-basis: 50%;
-      margin-left: 80px;
+      margin-left: 50px;
     }
     @media (max-width: $fifth-breakpoint) {
       left: 0;
       margin: 0 20px 0 0;
+      padding-top: 110px;
+      object-position: 0 -40px;
     }
     @media (max-width: $sixth-breakpoint) {
-      object-position: 0px 0;
-      height: 400px;
+      height: 450px;
     }
+    
   }
   &__text {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     position: relative;
-    flex-basis: 40%;
+    flex-basis: 50%;
     left: 0px;
-    padding-left: 50px; 
+    padding-left: 50px;
     &__header {
       @media (max-width: $sixth-breakpoint) {
         position: absolute;
-        top: -180px;
+        top: -459px;
         margin: 0;
         text-shadow: 0 0 1px $red;
       }
     }
     &__subheader {
+      display: inline-block;
+      width: 30px;
       position: relative;
       left: 210px;
+      margin: 0;
       &::before {
         content:"";
         display: block;
@@ -91,6 +97,9 @@
         top: 50%;
         left:-200px;
         transform: translateY(50%);
+      }
+      @media(max-width: $sixth-breakpoint) {
+        display: none;
       }
     }
     @media (max-width: $third-breakpoint) {

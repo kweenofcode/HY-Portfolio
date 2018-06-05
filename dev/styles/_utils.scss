@@ -1,5 +1,6 @@
 $main-font: 'Roboto', sans-serif;
 $secondary-font: 'Roboto Condensed', sans-serif;
+
 $main-black: #110f10;
 $main-grey: #63646a;
 $light-grey: #c7c9d1;
@@ -11,7 +12,47 @@ $second-breakpoint: 1800px;
 $third-breakpoint: 1610px;
 $fourth-breakpoint: 1430px;
 $fifth-breakpoint: 975px;
-$sixth-breakpoint: 675px;
+$sixth-breakpoint: 850px;
+
+// WYFB - FONTS
+$wyfb-font: 'Roboto', sans-serif;
+$wyfb-second-font: 'Alice', serif;
+// WYFB - COLORS
+$charcoal: #36384c;
+$main-red: #7d4f50;
+$main-beige: #e8d996;
+$blue: #679f9d;
+// BREAKPOINTS
+$wyfb-first-breakpoint: 1750px;
+$wyfb-second-breakpoint: 1400px;
+$wyfb-third-breakpoint: 800px;
+$wyfb-fourth-breakpoint: 610px;
+
+$main-yellow: #d4bd52;
+$mx-grey: #aaa;
+$mx-black: #333;
+$hover-font: #303030;
+$secondary-grey: #888;
+$side-grey: #eee;
+$secondary-black: #444;
+$faded-grey: rgba(170,170,170,0.2);
+$paragraph-grey: #666;
+$border-grey: #464646;
+$subfooter-grey: #3e3e3e;
+
+$mx__first-breakpoint: 1800px;
+$mx__second-breakpoint: 1450px;
+$mx__third-breakpoint: 1200px;
+$mx__fourth-breakpoint: 975px;
+$mx__fifth-breakpoint: 550px;
+
+%--outlined {
+  outline: 5px solid $white;
+  outline-offset: -30px;
+}
+%--padded-bottom {
+  padding-bottom: 100px;
+}
 
 %--uppercase {
 	text-transform: uppercase;

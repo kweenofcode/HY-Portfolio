@@ -1,0 +1,368 @@
+.main-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+  position: relative;
+    @media (max-width: $mx__third-breakpoint) {
+      justify-content: flex-start;
+    }
+  &__logo {
+    padding: 20px 0;
+  }
+  &__list {
+    display: flex;
+    flex: 10 0 300px;
+    justify-content: center;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0;
+    margin-right: 10%;
+    @media (max-width: $mx__third-breakpoint) {
+      position: fixed;
+      width: 400px;
+      top: 0;
+      right: -1000%;
+      bottom: 0;
+      flex-flow: column wrap;
+      z-index: 999;
+      align-items: center;
+      justify-content: space-around;
+      background: $white;
+      margin: 0;
+      transition: all .5s ease-in-out;
+    }
+    @media (max-width: $mx__fifth-breakpoint) {
+      width: 100%;
+    }
+  }
+  &__item {
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    transition: border-bottom .25s ease-in-out;
+    &:hover {
+      border-bottom: 3px solid $main-yellow;
+      color: $main-black;
+    }
+    &--drop-down {
+      padding-right: 30px;
+      &::after {
+        content: url("../images/down-arrow.png");
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+      }
+    }
+    &:hover + .mx__list--drop-down {
+      display: block;
+      @media (max-width: $mx__fourth-breakpoint) {
+        display: none;
+      }
+    }
+    @media (max-width: $mx__third-breakpoint){
+      display: block; 
+    }
+  }
+  &__icons,  &__country  {
+    flex: 0 0 150px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: $mx__third-breakpoint){
+      position: fixed;
+      top: 35px;
+      right: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      z-index: 100;
+    }
+    @media (max-width: $mx__fifth-breakpoint) {
+      flex-direction: column;
+      right: 0;
+      align-items: center;
+    }
+  }
+  &__country {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: 75%;
+    @media (max-width: $mx__third-breakpoint) {
+      display: none;
+    }
+  }
+  @media (max-width: $mx__fourth-breakpoint) {
+    justify-content: flex-start;
+  }
+}
+.country {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  position: relative;
+  &:after {
+    content: url("../images/down-arrow.png");
+    display: block;
+    position: absolute;
+    left: 85%;
+    top: 22px;
+    z-index: -1;
+  } 
+  &__select {
+    &__option {
+      display: none;
+      & + label {
+      display: none;
+      padding: 20px 40px;
+      @media (max-width: $mx__first-breakpoint) {
+        padding: 20px 20px;
+      }
+        & img {
+          display: inline;
+          margin-right: 10px;
+        }
+      }
+      &:checked + label {
+        display: flex;
+        }
+      }
+    }
+  &:hover label {
+    display: flex;
+    background: white;
+    &:hover {
+      position: relative;
+      color: white;
+      background: $main-yellow;
+    }
+  }
+}
+.fa-search, .fa-user, .fa-shopping-bag, .fa-bars {
+  @media (max-width: $mx__third-breakpoint) {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+.menu-btn {
+  display: none;
+  background: none;
+  @media (max-width: $mx__third-breakpoint) {
+    display: block;
+  }
+}
+.icon--drop-down{
+  position: relative;
+  padding: 0 10px;
+  @media (min-width: $mx__third-breakpoint) { 
+    &:hover + .mx__list--drop-down {
+      display: block;
+    }
+  }
+}
+@media (max-width: $mx__third-breakpoint) {
+  .display  + .mx__list--drop-down{
+    display: block;
+  }
+}
+.mx__headline {
+  display: flex;
+  position: relative;
+  &__text {
+    position: relative;
+    z-index: 10;
+    left: 200px;
+    flex: 1 0 300px;
+    &__container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    @media (max-width: $mx__first-breakpoint) {
+      left: 0;
+      right: 0;
+    }
+    @media (max-width: $mx__fourth-breakpoint) {
+      position: absolute;
+      top: 15%;
+      text-align: center;
+      margin: 0;
+    }
+    @media (max-width: $mx__fifth-breakpoint) {
+      top: 20%;
+    }
+    &--right {
+      text-align: right;
+      position: absolute;
+      padding: 30% 0;
+      right: 0;
+      @media (max-width: $mx__third-breakpoint) {
+        top: 30%;
+        padding: 0;
+        text-align: center;
+      }
+      @media (max-width: $mx__fifth-breakpoint) {
+        top: 15%;
+      }
+    }
+    &__date{
+      position: relative;
+      &__date::after {
+        content: "";
+        display: block;
+        background: $main-grey;
+        width: 62px;
+        height: 2px;
+        position: absolute; 
+        bottom: -10px;
+      }
+      @media (max-width: $mx__fourth-breakpoint) {
+        margin: 0;
+      }
+    }
+    &__title {
+      @media (max-width: $mx__first-breakpoint) {
+        margin-bottom: 30px;
+      }   
+      @media (max-width: $mx__fifth-breakpoint) {
+        margin-bottom: 20px;
+      }
+    }
+    &__paragraph {
+      @media (max-width: $mx__fifth-breakpoint) {
+        display: none;
+      }
+    }
+    &__icon {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @media (max-width: $mx__third-breakpoint) {
+        display: none;
+      }
+    }
+  }
+  &::after {
+    content: "01";
+    position: absolute;
+    z-index: -1;
+    color: $faded-grey;
+    bottom: 0;
+    left: 150px;
+    font-size: 50rem;
+    @media (max-width: $mx__first-breakpoint) {
+      font-size: 40rem;
+      left: 0;
+      bottom: -15%;
+    }
+    @media (max-width: $mx__fourth-breakpoint) {
+      display: none;
+    }
+  }
+}
+.flip-image {
+  position: relative;
+  &::after {
+    content:"";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.3);
+  }
+  &__paragraph {
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    left: 40px;
+    bottom: 0;
+    transform: rotate(180deg);
+    @media (max-width: $mx__fourth-breakpoint) {
+      display: none;
+    }  
+  }
+  &__outline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    &__svg {
+      width: 100%;
+      height: 700px;
+      stroke: $white;
+      stroke-width: 5px;
+      stroke-dasharray: 100, 100, 200, 550, 300, 200, 750;
+      fill: none;   
+    }
+    @media (max-width: $mx__fourth-breakpoint) {
+      display: none;
+    }  
+  }
+  &__icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    background: $white;
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.3rem;
+    font-weight: lighter;
+    &--left {
+      padding: 15px 5px;
+      bottom: 50%;
+      right: 77%;
+      background: $hover-font;
+      transform: translateY(50%);
+      z-index: 30;
+    }
+    &__item {
+      background: $white;
+      padding: 0 30px;
+      border: none;
+      border-right: 1px solid $main-grey;
+      color: $secondary-grey;
+      z-index: 40; 
+      transform: scaleY(1.5);
+      transition: all 0.25s ease-in-out;
+      &:last-of-type {
+        border-right: none;
+      }
+      &:hover {
+        color: $main-yellow;
+      }
+      &--dark {
+        background: $hover-font;
+      }
+      @media (max-width: $mx__second-breakpoint){
+        transform: none;
+        padding: 0 10px;
+      }
+    }
+    @media (max-width: $mx__second-breakpoint){
+      font-size: 2rem;
+      padding: 10px 5px;
+    }
+    @media (max-width: $mx__fourth-breakpoint){
+      display: none;
+    }
+  }
+  @media (max-width: $mx__fourth-breakpoint) {
+    margin: 30px 0;
+  }
+}

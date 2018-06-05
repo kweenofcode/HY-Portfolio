@@ -1,0 +1,126 @@
+.wyfb {
+  color: $charcoal;
+  line-height: 1.6;
+}
+.wyfb__header-1 {
+  font-family: $wyfb-font;
+  font-weight: 700;
+  position: absolute;
+  font-size: 10rem;
+  text-align: left;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 20px 0;
+  padding: 0;
+  @media (max-width: $wyfb-first-breakpoint) {
+    font-size: 7rem;
+  }
+}
+.wyfb__header-2 {
+  font-family: $wyfb-second-font; 
+  font-size: 4.2rem; 
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: darken($charcoal, 10);
+  &--center {
+    text-align: center;
+  }
+  &--title {
+    text-align: center;
+  }
+  @media (max-width: $wyfb-first-breakpoint) {
+    font-size: 4rem;
+  }
+  @media (max-width: $wyfb-second-breakpoint) {
+    font-size: 3rem;
+    text-align: right;
+  }
+  @media (max-width: $wyfb-third-breakpoint) {
+    font-size: 2rem;
+    text-align: center;
+  }
+  &--small {
+    font-size: 3rem;
+    writing-mode: vertical-lr;
+  }
+  &--final {
+    font-size: 3rem;
+    @media (max-width: $wyfb-third-breakpoint) {
+      font-size: 2rem;
+    }
+    @media (max-width: $wyfb-third-breakpoint) {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  }
+}
+.wyfb__header-3 {
+  font-size: 6rem;
+  font-family: $wyfb-second-font;
+  @media (max-width: $wyfb-first-breakpoint) {
+    font-size: 4rem;
+  } 
+}
+.option {
+  font-size: 5rem;
+  font-family: $wyfb-font;
+  text-transform: uppercase;
+  color: $charcoal;
+  @media (max-width: $wyfb-first-breakpoint) {
+    font-size: 3rem;
+  }
+  @media (max-width: $wyfb-third-breakpoint) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: $wyfb-third-breakpoint) {
+    font-size: 2rem;
+  }
+}
+.hl {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.6;
+  font-family: $wyfb-font;
+  @media (max-width: $wyfb-first-breakpoint) {
+    font-size: 6rem;
+  }
+  @media (max-width: $wyfb-second-breakpoint) {
+    font-size: 5rem;
+  }
+  @media (max-width: $wyfb-third-breakpoint) {
+    font-size: 4rem;
+  }
+  @media (max-width: $wyfb-third-breakpoint) {
+    font-size: 2.5rem;
+  }
+  &--block {
+    display: block;
+  }
+  &--small {
+    font-size: 7rem;
+    @media (max-width: $wyfb-first-breakpoint) {
+    font-size: 5rem;
+    } 
+  }
+}
+.wyfb__paragraph--input{
+  font-size: 3rem;
+  @media (max-width: $wyfb-third-breakpoint) {
+    font-size: 1.5rem;
+  }
+}
+.wyfb__paragraph {
+  color: darken($charcoal, 10);
+  font-size: 2rem;
+  line-height: 1.8;
+  @media (max-width: $wyfb-first-breakpoint) {
+    font-size: 1.7rem;
+  }
+}
+.wyfb__button__text {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

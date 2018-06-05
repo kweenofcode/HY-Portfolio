@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400" rel="stylesheet">
+  <script defer src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+  <link rel="stylesheet" href="./public/styles/style.css">
+</head>
+<body class="main-page"> 
+  <!-- 01 - mx__header -->
+  <mx__header id="home" class="main-mx__header">
+    <div class="mx__wrapper mx__wrapper--nav">
+      <nav class="main-nav">
+        <img class="main-nav__logo" src="./images/logo.png" alt="maxshop logo">
+        <ul class="main-nav__list">
+          <li><button class="main-nav__item mx__btn mx__btn--close">X</button></li>
+          <li><a class="main-nav__item mx__list__link" href="#home">Home</a></li>
+          <li><a class="main-nav__item main-nav__item--drop-down mx__list__link" href="#shop">Shop</a>
+            <div class="mx__list--drop-down">
+              <div class="mx__list">
+                <ul class="mx__list mx__list--nested">
+                  <li><h5 class="mx__header-5 mx__header-5--vertical mx__list__title--vertical">Clothing</h5></li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Shirts</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Tops</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Outerwear</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Bottoms</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Denim</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Swim</li>
+                </ul>
+                <ul class="mx__list mx__list--nested">
+                  <li><h5 class="mx__header-5 mx__header-5--vertical mx__list__title--vertical">Handbag</h5></li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Work</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Weekend</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Backpacks</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Wallets</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Work</li>
+                </ul>
+                <ul class="mx__list mx__list--nested">
+                  <li><h5 class="mx__header-5 mx__header-5--vertical mx__list__title--vertical">Shoes</h5></li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Sneakers</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Casual</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Boots</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Shoe Care</li>
+                </ul>
+                <ul class="mx__list mx__list--nested">
+                  <li><h5 class="mx__header-5 mx__header-5--vertical mx__list__title--vertical">Accessories</h5></li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Sunglasses</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Watches</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Jewelry</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Hats, Scarves & Gloves</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Ties</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Underwear & Socks</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Grooming Products</li>
+                  <li class="mx__paragraph mx__paragraph--small mx__list__item--hl">Belts</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a class="main-nav__item mx__list__link" href="#lookbook">Lookbook</a></li>
+          <li><a class="main-nav__item mx__list__link" href="#contact">Contact</a></li>
+          <li><a class="main-nav__item mx__list__link" href="#blog">Blog</a></li>
+        </ul>
+        <div class="main-nav__country">
+          <ul class="country mx__list">
+            <li class="country__select">
+              <input class="country__select__option" type="radio" id="britain" name="country" checked="true">
+              <label class="mx__list__label" for="britain"><img src="./images/United Kingdom(Great Britain).png" alt="">GB</label>
+            </li>
+            <li class="country__select">
+              <input class="country__select__option" type="radio" id="us" name="country">
+              <label class="mx__list__label" for="us"><img src="./images/United States of America(USA).png" alt="">US</label>
+            </li>
+            <li class="country__select">
+              <input class="country__select__option" type="radio" id="france" name="country">
+              <label class="mx__list__label" for="france"><img src="./images/France.png" alt="">FR</label>
+            </li>
+            <li class="country__select">
+              <input class="country__select__option" type="radio" id="germany" name="country">
+              <label class="mx__list__label" for="germany"><img src="./images/Germany.png" alt="">DE</label>
+            </li>
+            <li class="country__select">
+              <input class="country__select__option" type="radio" id="brazil" name="country">
+              <label class="mx__list__label" for="brazil"><img src="./images/Brazil.png" alt="">BR</label>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-nav__icons mx__list">
+          <li><a class="icon--drop-down" href="#"><i class="fa fa-search"></i></a>
+            <div class="mx__list--drop-down">
+              <div class="mx__list">
+                <form class="mx__list mx__list--nested" action="">
+                  <h5 class="mx__header-5 mx__header-5--center list__title">Search Now</h5>
+                  <input class="mx__btn--square mx__btn--center" type="text" placeholder="Your search here...">
+                  <input class="mx__btn mx__btn--hover" type="submit" value="Search">
+                </form>
+              </div>
+            </div>
+          </li>
+          <li><a class="icon--drop-down" href="#"><i class="fa fa-user"></i></a>
+            <div class="mx__list--drop-down">
+              <ul class="mx__list mx__list--vertical">
+                <li><h5 class="mx__header-5 list__title">Manage Account</h5></li>
+                <li><p class="mx__paragraph mx__paragraph--small mx__paragraph--unpadded mx__list__item--hl">Login / Register</p>
+                </li>
+                <li><p class="mx__paragraph mx__paragraph--small mx__paragraph--unpadded mx__list__item--hl">Wishlist <span class="mx__paragraph--yellow">(3)</span> </p></li>
+                <li><p class="mx__paragraph mx__paragraph--small mx__paragraph--unpadded mx__list__item--hl">Compare Items <span class="mx__paragraph--yellow">(6)</span> </p></li>
+                <li><p class="mx__paragraph mx__paragraph--small mx__paragraph--unpadded mx__list__item--hl">Checkout</p></li>
+              </ul>
+              <ul class="mx__list mx__list--vertical">
+                <li><h5 class="mx__header-5 list__title">Currency</h5></li>
+                <li><p class="mx__paragraph mx__paragraph--small mx__paragraph--unpadded mx__list__item--hl">England <span class="mx__paragraph--yellow">(GBP)</span></p></li>
+                <li><p class="mx__paragraph mx__paragraph--small mx__paragraph--unpadded mx__list__item--hl">United States <span class="mx__paragraph--yellow">(USD)</span></p></li>
+                <li><p class="mx__paragraph mx__paragraph--small mx__paragraph--unpadded mx__list__item--hl">France <span class="mx__paragraph--yellow">(EURO)</span></p></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="icon--drop-down" href="#"><i class="fa fa-shopping-bag"></i></a>
+            <div class="mx__list--drop-down">
+              <ul class="mx__list mx__list--vertical">
+                <li><h5 class="mx__header-5 list__title">Shopping Bag</h5></li>
+                <li><p class="mx__paragraph">you have <span class="mx__paragraph--yellow">3 item(s)</span> in your bag</p></li>
+                <li>
+                  <div class="list__items--shared">
+                      <img class="list__items--image" src="./images/top-product-1.png" alt="">
+                    <div>
+                      <p class="mx__paragraph mx__paragraph--small">Lipsy Crochet Applique Wrap <br><span class="mx__paragraph--light">Blouse</span></p>
+                      <h5 class="mx__header-5 mx__header-5--small cart__item--mx__header">$120.00 <span class="mx__header-5--hover">(x2)</span> </h5>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list__items--shared">
+                    <img class="list__items--image" src="./images/top-product-2.png" alt="">
+                    <div>
+                      <p class="mx__paragraph mx__paragraph--small">Lipsy Crochet Applique Wrap<br><span class="mx__paragraph--light">Blouse</span></p>
+                      <h5 class="mx__header-5 mx__header-5--small">$120.00</h5>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list__items--shared">
+                    <p class="mx__paragraph">Subtotal</p>
+                    <h5 class="mx__header-5 list__title">$320.00</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="list__items--shared">
+                    <button class="mx__btn mx__btn--hover">View Bag</button>
+                    <button  class="mx__btn mx__btn--hover">Checkout</button>
+                  </div>
+                </li>
+              </ul>
+              </div>
+            </li>
+          <li><button class="mx__open-btn mx__btn--open"><i class="fa fa-bars menu-btn"></i></button></li>
+        </ul>
+      </nav>
+      <div class="mx__headline">
+        <div class="mx__headline__text">
+          <div class="mx__headline__text__container">
+            <h3 class="mx__header-3 headline__text__date">26/02/2016</h3>
+            <p class="mx__headline__text__paragraph mx__paragraph mx__paragraph--light mx__paragraph--large">Bring glamour to your wardrobe</p>
+            <h1 class="mx__headline__text__title mx__header-1">Summer <br> Collection 2016</h1>
+            <a class="mx__btn mx__btn--large" href="#">View More</a>
+            <img class="mx__headline__text__icon" src="./images/icon.png" alt="">
+          </div>
+        </div>
+        <div class="flip-image">
+          <div>
+            <img src="./images/main-image-1.png" alt="">
+          </div>
+          <ul class="mx__list flip-image__icons">
+            <button class="flip-image__icons__item"> < </button>
+            <button class="flip-image__icons__item"> > </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </mx__header>
+  <!-- 03 - Collections -->
+  <nav class="collections-nav" id="shop">
+    <ul class="mx__wrapper mx__list">
+      <li class="collections-nav__item">
+        <h4 class="collections-nav__item__title mx__header-4"><span class="collections-nav__item__title__line">Fashion</span><br><span class="collections-nav__item__title__line">& Accessories</span></h4>
+        <p class="mx__paragraph mx__paragraph--vertical collections-nav__item__paragraph"> Diverse Products</p>
+        <img class="collections-nav__item--first" src="./images/image-1.png" alt="A model in a white blazer">
+      </li>
+      <li class="collections-nav__item">
+        <h4 class="collections-nav__item__title mx__header-4"><span class="collections-nav__item__title__line">New</span><br><span class="collections-nav__item__title__line">Collections</span></h4>
+        <p class="mx__paragraph mx__paragraph--vertical collections-nav__item__paragraph">Unique Novelties</p>
+        <img class="collections-nav__item__img--outlined"  src="./images/image-2.png" alt="A model wearing a pink leather backpack">
+      </li>
+      <li class="collections-nav__item">
+        <h4 class="collections-nav__item__title mx__header-4"><span class="collections-nav__item__title__line">Spring/Summer</span><br><span class="collections-nav__item__title__line">Lookbook</span></h4>
+        <p class="mx__paragraph mx__paragraph--vertical collections-nav__item__paragraph">Unique Novelties</p>
+        <img src="./images/image-3.png" alt="A model in a white sweater">
+      </li>
+    </ul>
+    <button class="collections-nav__button mx__btn"> < </button>
+    <button class="collections-nav__button mx__btn"> > </button>
+  </nav>
+  <!-- 03 - Season -->
+  <main class="mx__wrapper season">
+    <section class="mx__wrapper__inner-wrapper">
+      <h2 class="mx__header-2 season__title--vertical">Spring/Summer</h2>
+      <h3 class="season__header mx__header-3">Top Products</h3>
+      <div class="season__text">
+        <p class="mx__paragraph mx__paragraph--lightest">Come & Check our new spring summer collection 2016</p>
+        <p class="mx__paragraph">Prev <span class="mx__paragraph--light">/ Next</span></p>
+      </div>
+      <div>
+        <ul class="mx__list wrapper__inner-mx__wrapper--bottom">
+          <li class="sale">
+            <div class="sale__item">
+              <img src="./images/top-product-1.png" alt="A model in a beige cableknit sweater">
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+            <div>
+              <p class="mx__paragraph mx__paragraph--small">Lipsy Crochet Applique Wrap<br><span class="mx__paragraph--light">Blouse</span></p>
+              <h5 class="mx__header-5 mx__header-5--small sale__item__cost">$120.00<span class="mx__header-5--reduced sale__item__reduction">$150.00</span></h5>
+            </div>
+        </li>
+        <li class="sale">
+            <div class="sale__item">
+              <img src="./images/top-product-2.png" alt="Model in long white jacket">
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+            <div>
+              <p class="mx__paragraph mx__paragraph--small">Sweatshirt in Grey Marl<br><span class="mx__paragraph--light">T-Shirt</span></p>
+              <h5 class="mx__header-5 mx__header-5--small sale__item__cost">$110.00</h5>
+            </div>
+          <li class="sale">
+            <div class="sale__item">
+              <img src="./images/top-product-3.png" alt="Model in black shirt button-down shirt and broad-rimmed black felt hat">
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+            <div>
+              <p class="mx__paragraph mx__paragraph--small">Embroidered Flippy<br><span class="mx__paragraph--light">Hat</span></p>
+              <h5 class="mx__header-5 mx__header-5--small sale__item__cost">$145.00</h5>
+            </div>
+          </li>
+          <li class="sale">
+            <div class="sale__item">
+              <img src="./images/top-product-4.png" alt="Model in grey t-shirt and blue baseball cap">
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+            <div>
+              <p class="mx__paragraph mx__paragraph--small">Embroidered Skater<br><span class="mx__paragraph--light">Dress</span></p>
+              <h5 class="mx__header-5 mx__header-5--small sale__item__cost">$120.00</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="headline" id="lookbook">
+        <div class="flip-image">
+          <img src="./images/main-image-2.png" alt="">
+          <p class="mx__paragraph--vertical mx__paragraph--vertical--uppercase flip-image__paragraph">By Marc Jacobs</p>
+          <div class="flip-image__outline">
+            <svg class="flip-image__outline__svg" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <rect x="200" y="100" width="600" height="350"/>
+            </svg>
+          </div>
+          <div class="flip-image__icons flip-image__icons--left">
+            <button class="flip-image__icons__item flip-image__icons__item--dark"> < </button>
+            <button class="flip-image__icons__item flip-image__icons__item--dark"> > </button>
+          </div>
+        </div>
+        <div class="headline__text headline__text--right">
+          <h3 class="headline__text__title mx__header-3">Salvator Ferragamo <br> Lookbook Spring/Summer 2016</h3>
+          <p class="mx__paragraph mx__paragraph--light headline__text__date">18 June 2016 / Salvatore Campain</p>
+          <a href="#" class="mx__btn">Get the Look!</a>
+        </div>
+      </div>
+    <!-- 05 - Sales Items -->
+    <div class="season--sale">
+        <h2 class="mx__header-2 season__title--vertical season__title--left">Summer Sale</h2>
+          <div>
+            <h3 class="season__header mx__header-3">Onsale Products</h3>
+            <div class="season__text">
+              <p class="mx__paragraph mx__paragraph--lightest">Come & Check our new spring summer collection 2016</p>
+              <p class="mx__paragraph">Prev<span class="mx__paragraph--light"> /  Next</span></p>
+            </div>
+          </div>
+          <ul class="mx__list">
+            <li class="sale">
+              <div class="sale__item">
+                <img src="./images/onsale-products-1.png" alt="Model in a white button-down and jeans">
+                <i class="fa fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p class="mx__paragraph mx__paragraph--small">Lipsy Crochet Applique Wrap<br><span class="mx__paragraph--light">Blouse</span></p>
+                <h5 class="mx__header-5 mx__header-5--small sale__item__cost">$120.00<span class="mx__header-5--reduced sale__item__reduction">$150.00</span></h5>
+              </div>
+            </li>
+            <li class="sale">
+              <div class="sale__item">
+                <img src="./images/onsale-products-2.png"   alt="Model in black  baseball cap and denim jacket">
+                <i class="fa fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p class="mx__paragraph mx__paragraph--small">Sweatshirt in Grey Marl<br>
+                <span class="mx__paragraph--light">T-Shirt</span></p>
+                <h5 class="mx__header-5 mx__header-5--small sale__item__cost">$88.00<span class="mx__header-5--reduced sale__item__reduction">$120.00</span></h5>
+              </div>
+            </li>
+            <li class="sale">
+              <div class="sale__item">
+                <img src="./images/onsale-products-3.png" alt="Model in high-waisted two piece bathing suit">
+                <i class="fa fa-shopping-bag"></i>
+            </div>
+            <div>
+              <p class="mx__paragraph mx__paragraph--small">Oysho Crop & Vest Set<br>
+              <span class="mx__paragraph--light">Dress</span></p>
+              <h5 class="mx__header-5 mx__header-5--small sale__item__cost">$112.00<span   class="mx__header-5--reduced sale__item__reduction">$140.00</span></h5>
+            </div>
+          </li>
+          <li class="sale">
+            <div class="sale__item">
+              <img src="./images/onsale-products-4.png" alt="Model in shawl">
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+            <div>
+              <p class="mx__paragraph mx__paragraph--small">55DSL Lightning Bolt Sweatshirt<br><span class="mx__paragraph--light">Sweatshirts</span></p>
+              <h5 class="mx__header-5 mx__header-5--small sale__item__cost">$80.00<span class="mx__header-5--reduced sale__item__reduction">$100.00</span></h5>
+            </div>
+            </li>
+          </ul>
+        </div>
+    </section>
+  </main>
+  <!-- 07 - Blog -->
+  <section id="blog" class="mx__wrapper mx__wrapper--blog">
+    <div class="mx__wrapper__inner-wrapper mx__wrapper__inner-wrapper--bottom">
+      <h3 class="blog-title mx__header-3">Our Blog</h3>
+      <article class="blog blog--first">
+          <div class="blog__text">
+            <h6 class="blog__subtitle mx__header-6 mx__header-6--uppercase">Lookbook</h6>
+            <h5 class="blog__title mx__header-5">Excerpt: A Sense of Belonging</h5>
+            <p class="blog__date mx__paragraph mx__paragraph--smallest mx__paragraph--light">4 October 2016 / 368 Comments</p>
+            <p class="blog__content mx__paragraph mx__paragraph--smaller mx__paragraph--lighter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ipsum natus! Nisi quasi, aspernatur excepturi est aliquid sit quibusdam rerum sapiente pariatur qui at magnam, explicabo mollitia deleniti porro, cum consequatur. Nemo ut possimus illum quaerat recusandae et labore earum?</p>
+          </div>
+          <img class="blog__image blog__image--first" src="./images/blog-1.png" alt="">
+      </article>
+      <article class="blog blog--second">
+        <div class="blog__image flip-image">
+          <img class="blog__image--second" src="./images/Blog-2.png" alt="">
+          <div class="flip-image__icons">
+            <button class="flip-image__icons__item flip-image__icons__item--small"> < </button>
+            <button class="flip-image__icons__item flip-image__icons__item--small"> > </button>
+          </div>
+        </div>
+        <div class="blog__text blog__text--second">
+          <h6 class="mx__header-6 mx__header-6--uppercase">Campaign</h6>
+          <h5 class="blog__title mx__header-5">Chester & Peck 2016</h5>
+          <p class="blog__date mx__paragraph mx__paragraph--smallest mx__paragraph--light">4 October 2016 / 368 Comments</p>
+          <p class="blog__content mx__paragraph mx__paragraph--smaller mx__paragraph--lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita culpa sunt, nemo, porro, suscipit officiis doloremque architecto deleniti ea amet minus est ad illum nam vero hic pariatur fuga numquam autem. Cumque ut cupiditate quis inventore autem nemo, maxime dignissimos.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- 07 - CTA -->
+  <section>
+    <div class="cta">
+      <div class="cta__footer cta__footer--first">
+        <div class="mx__wrapper--cta">
+          <h3 class="cta__header mx__header-3 mx__header-3--white">Rethink Your Design</h3>
+          <p class="cta__subtitle mx__paragraph mx__paragraph--white">Minimal & Modern Look</p>
+          <a class="mx__btn mx__btn--light" href="#">Discover More</a>
+        </div>
+      </div>
+      <div class="cta__footer cta__footer--second">
+        <div>
+          <h3 class="cta__header mx__header-3 mx__header-3--cta">We are fashion shop</h3>
+          <p class="cta__subtitle mx__paragraph mx__paragraph--lightest">Revolutionary Concepts</p>
+          <a class="mx__btn" href="#">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 08 - Footer -->
+  <footer id="contact" class="main-footer">
+    <div class="main-footer__wrapper mx__wrapper">
+      <div class="main-footer__wrapper__content--contact">
+        <h5 class="mx__header-5 mx__header-5--footer">Contact</h5>
+        <p class="contact__info mx__paragraph mx__paragraph--small mx__paragraph--white">621 Bingammon Branch Road Warwick<br>NY 10990</p>
+        <p class="contact__info mx__paragraph mx__paragraph--small mx__paragraph--white">Phone: 845-988-7165</p>
+        <p class="contact__info mx__paragraph mx__paragraph--small mx__paragraph--white">Fax: 814-468-0188</p>
+        <p class="contact__info mx__paragraph mx__paragraph--small mx__paragraph--white">Email: Support@maxshop.com</p>
+      </div>
+      <div class="main-footer__wrapper__content main-footer__wrapper__content--tags">
+        <h5 class="tags__header mx__header-5 mx__header-5--footer">Tags</h5>
+        <div>
+          <button class="mx__btn mx__btn--square mx__btn--white mx__btn--small">creative</button>
+          <button class="mx__btn mx__btn--square mx__btn--white mx__btn--small">blog</button>
+          <button class="mx__btn mx__btn--square mx__btn--white mx__btn--small">maxshopthemes</button>
+          <button class="mx__btn mx__btn--square mx__btn--white mx__btn--small">themeforest</button>
+          <button class="mx__btn mx__btn--square mx__btn--white mx__btn--small">logo</button>
+          <button class="mx__btn mx__btn--square mx__btn--white mx__btn--small">template</button>
+          <button class="mx__btn mx__btn--square mx__btn--white mx__btn--small">psd</button>
+          <button class="mx__btn mx__btn--square mx__btn--white mx__btn--small">wordpress</button>
+        </div>
+      </div>
+      <div class="main-footer__wrapper__content main-footer__wrapper__content--instagram">
+        <h5 class="instagram__header mx__header-5 mx__header-5--footer">Instagram</h5>   
+        <div class="instagram">
+          <figure class="instagram__grid">
+              <img src="./images/insta-1.png" alt="">
+              <figcaption class="instagram__grid__text">+</figcaption>
+          </figure>
+          <figure class="instagram__grid">
+            <img src="./images/insta-2.png" alt="">
+            <figcaption class="instagram__grid__text">+</figcaption>
+          </figure>
+          <figure class="instagram__grid">
+            <img src="./images/insta-3.png" alt="">
+            <figcaption class="instagram__grid__text">+</figcaption>
+          </figure>
+          <figure class="instagram__grid">
+            <img src="./images/insta-4.png" alt="">
+            <figcaption class="instagram__grid__text">+</figcaption>
+          </figure>
+          <figure class="instagram__grid">
+            <img src="./images/insta-5.png" alt="">
+            <figcaption class="instagram__grid__text">      +</figcaption>
+          </figure>
+          <figure class="instagram__grid">
+            <img src="./images/insta-6.png" alt="">
+            <figcaption class="instagram__grid__text">+</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="main-footer__wrapper__content newsletter">
+        <h5 class="newsletter__header mx__header-5 mx__header-5--footer">Newsletter</h5>
+        <p class="newsletter__info mx__paragraph mx__paragraph--small mx__paragraph--white">Signup for our Newsletter & Events</p>
+        <div class="newsletter">
+          <input class="mx__btn mx__btn--square mx__btn--white mx__btn--left" type="email" placeholder="Email Address">
+          <input class="mx__btn mx__btn--square mx__btn--white" type="submit" value=Signup>
+        </div>
+      </div>
+    </div>  
+      <div class="footer-subwrapper">
+        <div class="footer-subwrapper__content footer-subwrapper--center">
+          <h5 class="mx__header-5 mx__header-5--footer mx__header-5--center ">Follow us on</h5>
+          <div class="social">
+            <a class="mx__btn mx__btn--white mx__btn--tags" href="">Behance</a>
+            <a class="mx__btn mx__btn--white mx__btn--tags" href="">Dribble</a>
+            <a class="mx__btn mx__btn--white mx__btn--tags" href="">Themeforest</a>
+            <a class="mx__btn mx__btn--white mx__btn--tags" href="">Pinterest</a>
+            <a class="mx__btn mx__btn--white mx__btn--tags" href="">Facebook</a>
+            <a class="mx__btn mx__btn--white mx__btn--tags" href="">Twitter</a>
+          </div>
+        </div>
+        </div>
+      <!-- 09 - Subfooter -->
+      <div class="subfooter">
+        <div class="mx__wrapper">
+        <div class="mx__wrapper--footer">
+          <div class="subfooter__content footer--wrapper copyright">
+            <p class="subfooter__nav__item mx__paragraph--small mx__paragraph--white">&copy; Maxshop 2016. All Rights Reserved</p>
+            <ul class="mx__list">
+              <li class="subfooter__nav"><p class="subfooter__nav__item mx__paragraph mx__paragraph--small mx__paragraph--white"> Terms of use </p></li>
+              <li class="subfooter__nav"><p class="subfooter__nav__item mx__paragraph mx__paragraph--small mx__paragraph--white">Privacy Policy</p></li>
+              <li class="subfooter__nav"><p class="subfooter__nav__item mx__paragraph mx__paragraph--small mx__paragraph--white ">Contact Us</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+</body>
+<script>
+  let closeBtn = document.querySelector('.mx__btn--close');
+  let openBtn = document.querySelector('.mx__open-btn');
+  let mainNav = document.querySelector('.main-nav__list');
+  let mainNavItem = document.querySelectorAll('.main-nav__item');
+  let body = document.querySelector('.main-page');
+  
+  function openNav() {
+    mainNav.style.right = '0';
+    body.style.right= '400px';
+    } 
+  function closeNav() {
+    mainNav.style.right = "-100%";
+    body.style.right = '0';
+  }
+  openBtn.addEventListener('click', openNav, false);
+  closeBtn.addEventListener('click', closeNav, false);
+  mainNavItem.forEach(item => item.addEventListener('click', closeNav));
+
+  let hoverBtn = document.querySelectorAll('.icon--drop-down');
+  hoverBtn.forEach(btn => btn.addEventListener('click', function() {
+    this.classList.toggle('display'); 
+  }));
+  
+  
+</script>
+</html>

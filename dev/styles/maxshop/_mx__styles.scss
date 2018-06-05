@@ -1,0 +1,351 @@
+
+// 01 - Main Styles 
+// 02 - Header 
+// 03 - Collections 
+// 04 - Season 
+// 05 - Sale Item
+// 06 - Blog
+// 07 - CTA
+// 08 - Footer
+// 09 - Subfooter
+
+section {
+  min-height: 0;
+}
+.main-page {
+  position: relative;
+  right: 0;
+  transition: all .5s ease-in-out;
+}
+.mx__wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+  &--footer, &--nav {
+    padding: 0;
+  }
+  &--footer {
+    padding: 0;
+  }
+  &--blog {
+    padding: 0;
+  } 
+  &__inner-wrapper {
+    margin: 0 auto;
+    max-width: 65%;
+    &--bottom {
+      @extend %--padded-bottom;
+      @media (max-width: $mx__fifth-breakpoint) {
+        padding-bottom: 20px;
+      }
+    }
+    @media (max-width: $mx__first-breakpoint){
+      max-width: 80%;
+    }  
+    @media (max-width: $mx__fourth-breakpoint){
+      max-width: 100%;
+    }  
+  }
+  @media (min-width: $mx__first-breakpoint) {
+    max-width: 1920px;
+  }
+  @media (max-width: $mx__first-breakpoint) {
+    max-width: 1450px;
+  }
+  @media (max-width: $mx__second-breakpoint){
+    max-width: 1200px;
+  }
+  @media (max-width: $mx__third-breakpoint){
+    max-width: 80%;
+    padding: 0 0 50px 0;
+  }
+}
+.collections-nav{
+  position: relative;
+  &__item {
+  display: flex;
+  flex: 1 0 250px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  position: relative;
+  margin: 200px 0;
+  &:nth-child(-n +2) {
+    margin-right: 20px;
+  }
+  &__title {
+    display: inline-block;
+    bottom: 50px;
+    left: 0;
+    margin: 10px;
+    position: absolute;
+    &__line {
+      display: inline-block;
+      background: $white;
+      margin: 5px;
+      padding: 5px 20px;
+    }
+    @media (max-width: $mx__first-breakpoint) {
+      left: -50px;
+    }
+    @media (max-width: $mx__second-breakpoint) {
+      left: -15px;
+    }
+  }
+  &__paragraph {
+    left: 20px;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    transform: rotate(180deg);
+    &::before {
+      content: "";
+      background-color: $mx-black;
+      display: block;
+      height: 23px;
+      position: absolute;
+      right: 50%;
+      top: -30px;
+      width: 2px; 
+    }
+    @media (max-width: $mx__first-breakpoint) {
+      left: 0;
+    }
+    @media (max-width: $mx__second-breakpoint) {
+      top: 30%;      
+      left: -15px;
+    }
+    @media (max-width: $mx__third-breakpoint) {
+      display: none;
+    }
+  }
+  &__img--outlined {
+    @extend %--outlined;
+  }
+  &:nth-child(n + 2){
+    @media (max-width: $mx__fourth-breakpoint) {
+      display: none;
+    }
+  }
+  @media (max-width: $mx__third-breakpoint){
+    padding: 0;
+  }
+  @media (max-width: $mx__fourth-breakpoint) {
+    margin: 40px 0;
+    }
+  }
+  &__button {
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 85%;
+    min-width: 0;
+    border-radius: 50%;
+    padding: 10px 15px;
+    &:last-of-type {
+      left: 80%; 
+    }
+    @media (max-width: $mx__fourth-breakpoint) {
+      display: block;
+    }
+  }
+}
+
+.season {
+  position: relative;
+  &__title--vertical {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+    @media (max-width: $mx__first-breakpoint) {
+      right: -50px;
+    }
+    @media (max-width: $mx__second-breakpoint){
+      position: static;
+      margin: 0;
+      transform: none;
+    }
+  }
+  &__title--left {
+    left: 0;
+    top: 68%;
+    transform: none;
+    @media (max-width: $mx__first-breakpoint) {
+      left: -100px;
+    }
+  }
+  &__header {
+    margin-bottom: 0;
+  }
+  &__text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  &--sale {
+    padding: 100px 0;
+    @media (max-width: $mx__fourth-breakpoint) {
+      padding: 25px 0;
+    }
+  }
+}
+.sale {
+  flex: 1 0 150px;
+  margin: 0 auto;
+  &:nth-child(-n + 3){
+    margin-right: 10px;
+  }
+    &__item {
+    position: relative;
+    &__cost {
+      @media (max-width: $mx__second-breakpoint) {
+        margin: 0 0 20px 0;
+      }
+    }
+    &__reduction {
+      margin-left: 10px;
+    }
+    .fa-shopping-bag {
+      background: $mx-black;
+      bottom: 0;
+      color: $white;
+      font-size: 5rem;
+      margin: 0;
+      padding: 5px 10px;
+      position: absolute;
+      right: 0;
+      transition: all .25s ease-in-out;
+    }
+    &:hover .fa-shopping-bag {
+      background: $main-yellow;
+    }
+    @media (max-width: $mx__second-breakpoint){
+      left: 0;
+    }
+  }
+  @media (max-width: $mx__third-breakpoint) {
+    flex: 2 0 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+}
+.blog {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  &__image {
+    flex: 1 0 250px;
+    &--first {
+      z-index: 10;
+      position: relative;
+      border: 15px solid $white;
+    }
+    &--second {
+      z-index: 0;
+    }
+    @media (max-width: $mx__third-breakpoint) {
+      border: none;
+      width: 80%;
+    }
+    @media (max-width: $mx__fifth-breakpoint) {
+      width: 100%;
+      height: auto;
+    }
+    @media (max-width: $mx__fifth-breakpoint) {
+      display: flex;
+    }
+  }
+  &__text {
+    flex: 1 0 150px;
+    left: 50px;
+    padding: 50px 0 0 5%;
+    position: relative; 
+    z-index: 20;
+    &--second {
+      left: -50px;
+      padding: 50px 5% 0 0;
+      text-align: right;
+      @media (max-width: $mx__second-breakpoint){
+        left: 0;
+        padding: 10px 0 0 0;
+        margin: 20px 15px 0 0;
+      }
+      @media (max-width: $mx__third-breakpoint) {
+        left: 0;
+      }
+    }
+    @media (max-width: $mx__second-breakpoint){
+      left: 0;
+      padding: 0;
+    }
+    @media (max-width: $mx__third-breakpoint) {
+        padding: 0;
+        margin: 0;
+    }
+  }
+  &__title, &__date {
+    margin: 0;
+  }
+  &__content {
+    margin: 5% 0;
+    @media (max-width: $mx__first-breakpoint){
+      margin: 2% 0;
+    }
+  }
+  &--second {
+    bottom: 50px;
+    position: relative;
+    @media (max-width: $mx__second-breakpoint) {
+      bottom: 20px;
+    }
+    @media (max-width: $mx__third-breakpoint) {
+      bottom: 0;
+    }
+  }
+  @media (max-width: $mx__third-breakpoint) {
+    display: column;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  &--first {
+    @media (max-width: $mx__third-breakpoint) {
+      flex-flow: column-reverse wrap;
+    }
+  }
+  @media (max-width: $mx__first-breakpoint){
+    padding: 0 20px;
+  }
+}
+.cta {
+  width: 100%;
+  display: flex;
+  min-height: 0;
+  &__footer {
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex: 1 0 150px ;
+    flex-flow: column wrap;
+    padding: 150px 50px;
+    &--first {
+      background-image: url('../../images/footer-1.png');
+    }
+    &--second {
+      background-image: url('../../images/footer-2.png');
+    }
+  }
+  &__header {
+    margin: 0;
+  }
+  &__subtitle {
+    margin: 1% 0 10%;
+    @media (max-width: $mx__fifth-breakpoint) {
+      text-align: left;
+    }
+  }
+  @media (max-width: $mx__third-breakpoint) {
+    flex-flow: column wrap;
+  }
+}

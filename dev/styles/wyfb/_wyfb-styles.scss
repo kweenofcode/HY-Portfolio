@@ -1,0 +1,417 @@
+body.wyfb {
+  background-image: linear-gradient(to right, rgba(125, 79, 80,0.5) 30%, lighten($main-red, 30) 30%), url('../../images/old_moon_@2X.jpg');   
+}
+.wyfb__wrapper {
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: $wyfb-first-breakpoint) {
+    max-width: 80%;
+  }
+}
+// HOME PAGE STYLES
+.about__header {
+  bottom: 0;
+  left: 90%;
+  padding: 50px 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.wyfb__main-header {
+  background-image: linear-gradient(to right, rgba(125, 79, 80,0.5) 50%, lighten($main-red, 30) 50%), url('../../images/old_moon_@2X.jpg');       
+  display: flex;
+  justify-content: center;
+  left: 0;
+  margin: 0;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;  
+  @media (max-width: $wyfb-third-breakpoint) {
+    padding: none;
+    left: 0;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    background: none;
+    transform: translateY(-10%);
+  }
+}
+.wyfb__main-nav {
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(125, 79, 80,0.5) 50%, lighten($main-red, 30) 50%), url('../../images/old_moon_@2X.jpg');    
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-around;
+  &__item {
+    background-image: linear-gradient(to right, rgba(232,217,150,0.3), rgba(232,217,150,0.3)), url('../../images/paper_@2X.png'); 
+    border-radius: 50%;   
+    margin: 10px;
+    padding: 30px 10px;
+    position: relative;
+    &:hover {
+    animation: pulse 1s infinite; 
+      @media (max-width: $wyfb-third-breakpoint) {
+        animation: none;
+      }
+    }
+    @media (max-width: $wyfb-third-breakpoint) {
+      margin: 0 auto;
+      max-width: 60%;
+    }
+    @media (max-width: $wyfb-third-breakpoint) {
+      background: none;
+    }
+    & img {
+      @media (max-width: $wyfb-third-breakpoint) {
+        display: none;
+      } 
+    }
+  }
+  &__title {
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+    @media (max-width: $wyfb-third-breakpoint) {
+      background: rgba(125,79,80,0.8);
+      border-radius: 50%;
+      padding: 40px 20px;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  @media (max-width: $wyfb-third-breakpoint) {
+    flex-direction: column;
+  }
+}
+// ABOUT PAGE STYLES
+.about__article {
+  background-image: linear-gradient(to right, rgba(232,217,150,0.3), rgba(232,217,150,0.3)), url('../../images/paper_@2X.png'); 
+  border: 4px solid $main-red;
+  margin: 50px 0;
+  padding: 50px 100px;  
+  @media (max-width: $wyfb-third-breakpoint) {
+    padding: 50px;
+  }
+  @media (max-width: $wyfb-third-breakpoint) {
+    padding: 50px 50px;
+  }
+}
+.wyfb__button {
+  background: $main-red;
+  color: lighten($main-beige, 10);
+  margin-bottom: 50px;
+  padding: 20px 50px;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background: lighten($main-red, 20);
+    color: $main-red;
+    @media (max-width: $wyfb-third-breakpoint) {
+      background: inherit;
+      color: inherit;
+    }
+  }
+  @media (max-width: $wyfb-fourth-breakpoint) {
+    padding: 10px 20px;
+  }
+}
+.article__title {
+  margin: 30px 0;
+}
+// PROJECT PAGE STYLES
+.card-wrapper {
+  bottom: 0;
+  left: 0;
+  max-height: 100vh;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+.card, .question0 {
+  background-image: linear-gradient(to right, rgba(125, 79, 80,0.5) 30%, lighten($main-red, 30) 30%), url('../images/old_moon_@2X.jpg');
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+.card {
+  right: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.wyfb__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 50px auto;
+}
+.question__content {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  padding: 0;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+.arrow {
+  bottom: 0; 
+  opacity: 0.8;  
+  position: absolute;
+  min-width: 250px;
+  @media (max-width: $wyfb-first-breakpoint) {
+    min-width: 160px;
+  }
+  @media (max-width: $wyfb-third-breakpoint) {
+    display: none;
+  }
+}
+.arrow-1 {
+  left: -30px;
+  top: -180px;
+  transform: rotateX(0) rotateY(180deg);
+  @media (max-width: $wyfb-first-breakpoint) {
+    left: 0px;
+    top: -130px;
+  }
+}
+.arrow-2 {
+  left: 150px;
+  top: 285px;
+  transform: rotateX(180deg); 
+  @media (max-width: $wyfb-first-breakpoint) {
+    left: 115px;
+    top: 210px;
+  }
+  @media (max-width: $wyfb-second-breakpoint) {
+    top: 160px;
+  }
+}
+.options {
+  display: flex;
+  flex: 0 0 25%;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+  &__image {
+    background-image: linear-gradient(to right, rgba(232,217,150,0.3), rgba(232,217,150,0.3)), url('../../images/paper_@2X.png');
+    border-radius: 50%;
+    height: 400px;
+    min-width: 400px;
+    padding: 40px 0;
+    position: relative;
+    @media (max-width: $wyfb-first-breakpoint) {
+      left: 100px;
+      height: 300px;
+      min-width: 300px;
+      top: 0;
+    }
+    @media (max-width: $wyfb-second-breakpoint) {
+      height: 250px;
+      min-width: 250px;
+    }
+    @media (max-width: $wyfb-third-breakpoint) {
+      height: 200px;
+      left: 50px;
+      min-width: 200px;
+    }
+    @media (max-width: $wyfb-fourth-breakpoint) {
+      background: none;
+    }
+  }
+  &__results {
+    left: 0;
+  }
+  & img {
+    @media (max-width: $wyfb-fourth-breakpoint) {
+      display: none;
+    }
+  }
+}
+.questions {
+  align-items: flex-end;
+  display: flex;
+  flex: 0 0 70%;
+  justify-content: flex-end;
+  padding: 0 0 0 15%;
+  &-final {
+    align-items: center;
+  }
+}
+.wyfb__form {
+  position: absolute;
+  &__final {
+    bottom: 0;
+    font-family: $wyfb-second-font;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-top: 50px;
+    text-align: center;
+    @media (max-width: $wyfb-first-breakpoint) {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+    @media (max-width: $wyfb-second-breakpoint) {
+      font-size: 3rem;
+    }
+    @media (max-width: $wyfb-third-breakpoint) {
+      font-size: 2.6rem;
+    }
+    @media (max-width: $wyfb-third-breakpoint) {
+      font-size: 1.6rem;
+    }
+  }
+}
+.question__option {
+  background: lighten(antiquewhite, 2);
+  border: 3px solid $main-red;
+  border-radius: 50%;
+  color: $charcoal;
+  margin: 0;
+  padding: 30px;
+  position: absolute;
+  z-index: 1;
+  cursor: url("../../images/cursor.cur"), auto; 
+  transition: all .5s ease-in-out;
+  &:hover {      
+    background: $main-red;
+    color: antiquewhite;
+    cursor: url("../../images/cursor.cur"), auto;   
+    animation: pulse 1s infinite;  
+    @media (max-width: $wyfb-third-breakpoint) {
+      background-image: linear-gradient(to right, rgba(232,217,150,0.3), rgba(232,217,150,0.3)), url('../../images/paper_@2X.png');
+      color: $charcoal;
+      cursor: pointer;
+      animation: none; 
+    }
+  }
+  &--first {
+    left: -170px;
+    top: -210px;
+    @media (max-width: $wyfb-first-breakpoint) {
+      left: -110px;
+      top: -160px;
+    }
+    @media (max-width: $wyfb-third-breakpoint) {
+      left: -20px;
+    }
+    @media (max-width: $wyfb-fourth-breakpoint) {
+      left: 50px;
+    }
+  }
+  &--second {
+    padding: 30px 35px;
+    right: -530px;
+    top: 395px;
+    @media (max-width: $wyfb-first-breakpoint) {
+      right: -385px;
+      top: 270px;
+    }
+    @media (max-width: $wyfb-second-breakpoint) {
+      top: 220px;
+    }
+    @media (max-width: $wyfb-third-breakpoint) {
+      right: -240px;
+    }
+    @media (max-width: $wyfb-fourth-breakpoint) {
+      right: -150px;
+      top: 200px;
+    }
+  }
+  &--third {
+    border-radius: 0;
+    left: -170px;
+    top: 395px;
+    &:hover {
+      border-radius: 0;
+    }
+    @media (max-width: $wyfb-first-breakpoint) {
+      left: -110px;
+      top: 270px;
+    }
+    @media (max-width: $wyfb-second-breakpoint) {
+      top: 220px;
+    }
+    @media (max-width: $wyfb-third-breakpoint) {
+      left: -20px;
+    }
+    @media (max-width: $wyfb-fourth-breakpoint) {
+      left: 40px;
+      top: 30px;
+    }
+  }
+  @media (max-width: $wyfb-third-breakpoint) {
+    background-image: linear-gradient(to right, rgba(232,217,150,0.3), rgba(232,217,150,0.3)), url('../../images/paper_@2X.png');
+    border: 3px solid $main-red;
+  }
+}
+.questions-final {
+  @media (max-width: $wyfb-fourth-breakpoint) {
+    flex: 1 0 100%;
+  }
+}
+input[type=radio] {
+  display: none;
+}
+.other {
+  align-items: center;
+  bottom: 0;
+  background: lighten($main-red, 20);
+  display: flex;
+  justify-content: center;
+  left: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  &__form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  &__text, &__submit, &__header {
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+  }
+  &__text {
+    background: $main-beige;
+    border: none;
+    padding: 30px 20px;
+  }
+  &__submit {
+    background: $main-red;
+    border: none;
+    padding: 20px 10px;
+  }
+}
+.final-nav{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 $main-red;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 5px $main-red;   
+    transform: scale(1.01);     
+  }
+  100% {
+    box-shadow: 0 0 0 0 $main-red;
+    transform: scale(1);    
+  }
+}
+@keyframes slide-in {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}

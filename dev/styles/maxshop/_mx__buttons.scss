@@ -1,0 +1,68 @@
+.mx__btn {
+    border: 2px solid $main-yellow;
+    border-radius: 30px;
+    display: inline-block;
+    min-width: 175px;
+    max-width: 175px;
+    padding: 20px;
+    transition: all .25s ease-in-out;
+        @media (max-width: $mx__second-breakpoint) {
+            min-width: 150px ;
+        }
+        @media (max-width: $mx__third-breakpoint) {
+            min-width: 120px ;
+            padding: 10px;
+        }
+    &--light {
+        border: 2px solid $white;
+    }
+    &:hover {
+        background: $main-yellow;
+        border: 2px solid $main-yellow;
+        color: white;
+    }
+    @media (max-width: $mx__third-breakpoint) {
+        background: $main-yellow;
+        border: 2px solid $main-yellow;
+        color: white;
+    }
+    &--square {
+        background: none;
+        border: 2px solid $main-grey;
+        border-radius: 0;
+        min-width: 0;
+        margin: 10px 10px 0 0;
+        padding: 10px;
+        &:hover {
+        background: none;
+        color: $main-yellow;
+        }
+    }
+    &--close.main-nav__item {
+        display: none;
+        min-width: 0;
+        border-radius: 50%;
+        padding: 15px 20px;
+    @media (max-width: $mx__third-breakpoint){
+        display: block;
+    }
+}
+    &--open {
+        border: none;
+        background: none;
+    }
+    &--hover {
+        min-width: 100px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    &--center {
+        margin: 0;
+    }
+    &--tags {
+        @media (max-width: $mx__fourth-breakpoint) {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

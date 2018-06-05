@@ -1,0 +1,240 @@
+$header-font: 'Montserrat', sans-serif;
+$paragraph-font: 'Roboto', sans-serif;
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: $header-font;
+}
+%--uppercase {
+  text-transform: uppercase;
+}
+.mx__header-1, .mx__header-3, .mx__header-4, .mx__paragraph {
+  color: $main-black;
+}
+.mx__header-1 {
+  color: $main-black;
+  font-family: $header-font;
+  font-size: 8rem;
+  @media (max-width: $mx__first-breakpoint) {
+    font-size: 7rem;
+  }
+  @media (max-width: $mx__fourth-breakpoint) {
+    font-size: 6rem;
+  }
+  @media (max-width: $mx__fifth-breakpoint) {
+    font-size: 3rem;
+  }
+}
+.mx__header-2 {
+  color: $side-grey;
+  font-size: 8.6rem;
+  writing-mode: vertical-lr;
+  @media (max-width: $mx__second-breakpoint) {
+    font-size: 7rem;
+    color: $main-black;
+    text-align: center;
+    writing-mode: horizontal-tb;
+  }
+  @media (max-width: $mx__fourth-breakpoint) {
+    font-size: 3rem;      
+  }
+}
+.mx__header-3 {
+  color: $main-black;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  &--white {
+    color: white;
+  }
+  @media (max-width: $mx__third-breakpoint) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: $mx__fifth-breakpoint) {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+  }
+}
+.mx__header-4 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 4rem;
+  @media (max-width: $mx__fifth-breakpoint) {
+    font-size: 2rem;
+  }
+}
+.mx__header-5 {
+  font-size: 2rem;
+  &--small {
+    font-size: 1.8rem;
+  }
+  &--reduced {
+    color: $main-grey;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-decoration: line-through;
+  }
+  &--footer {
+    color: $main-yellow;
+    font-weight: 400;
+    @extend %--uppercase;
+    @media (max-width: $mx__fifth-breakpoint) {
+      text-align: center;
+    }
+  }
+  &--center {
+    text-align: center;
+  }
+  &--vertical {
+    writing-mode: vertical-lr;
+  }
+  &--hover {
+    font-size: 1rem;
+    color: $main-grey;
+    display: inline;
+  }
+}
+.mx__header-6 {
+  color: $main-grey;
+  font-size: 1.2rem;
+  &--uppercase {
+    @extend %--uppercase;
+  }
+}
+.mx__list__link {
+  color: $secondary-grey;
+  font-size: 2.2rem;
+  transition: color .25s ease-in-out;
+  @media (max-width: $mx__first-breakpoint) {
+    font-size: 1.7rem;
+  }
+  @media (max-width: $mx__third-breakpoint) {
+    color: $main-black;
+    font-size: 3rem;
+  }
+}
+.mx__list__label {
+    font-size: 1.8rem;
+    color: $secondary-grey;
+    @media (max-width: $mx__first-breakpoint) {
+      font-size: 1.5rem;
+    }
+}
+.mx__paragraph {
+  font-family: $paragraph-font;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  @media (max-width: $mx__first-breakpoint){
+    font-size: 1.5rem;
+  }
+  @media (max-width: $mx__fifth-breakpoint) {
+    font-size: 1.3rem;
+  }
+  &--light {
+    color: $main-grey;
+    @media (max-width: $mx__fourth-breakpoint) {
+      color: $main-black;
+    }
+  }
+  &--lighter {
+    color: $secondary-grey;
+  }
+  &--lightest {
+    color: $paragraph-grey;
+    @media (max-width: $mx__fifth-breakpoint) {
+      text-align: center;
+    }
+  }
+  &--white {
+    color: $white;
+    @media (max-width: $mx__fifth-breakpoint) {
+      text-align: center;
+    }
+  }
+  &--small {
+    font-size: 1.6rem;
+    @media (max-width: $mx__first-breakpoint){
+      font-size: 1.4rem;
+    }
+    @media (max-width: $mx__second-breakpoint){
+      font-size: 1.3rem;
+    }
+    @media (max-width: $mx__third-breakpoint) {
+      font-size: 1.2rem;
+    }
+    @media (max-width: $mx__fourth-breakpoint) {
+      font-size: 1.1rem;
+    }
+    @media (max-width: $mx__fifth-breakpoint) {
+      font-size: 1rem;
+    }
+  }
+  &--smaller {
+    font-size: 1.5rem;
+    @media (max-width: $mx__first-breakpoint) {
+      font-size: 1.3rem;
+    }
+  }
+  &--smallest {
+    font-size: 1.4rem;
+  }
+  &--largest {
+    font-size: 2.8rem;
+  }
+  &--vertical {
+    line-height: 4;
+    text-align: center;
+    writing-mode: vertical-rl;
+    &--uppercase {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      writing-mode: vertical-lr;
+    }
+  }
+  &--yellow{
+    color: $main-yellow;
+  }
+  &--unpadded {
+    margin: 0;
+  }
+}
+.mx__btn {
+  color: $main-black;
+  font-family: $header-font;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  &--light {
+    border: 2px solid $white;
+    color: $white;
+  }
+  &--white {
+    color: $white;
+  }
+  &--left {
+    text-align: left;
+  }
+  &--small {
+    font-size: 1.4rem;
+  }
+  &--large {
+    font-size: 1.8rem;
+  }
+  @media (max-width: $mx__first-breakpoint){
+    font-size: 1.3rem;
+  }
+}
+.fa-search, .fa-user, .fa-shopping-bag, .fa-bars {
+  color: $main-grey;
+  font-size: 3rem;
+  @media (max-width: $mx__first-breakpoint) {
+    font-size: 2rem;
+  }
+  @media (max-width: $mx__third-breakpoint) {
+    font-size: 3rem;
+    color: $main-black;
+  }
+}
