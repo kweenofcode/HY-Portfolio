@@ -9,6 +9,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 .wrapper {
   max-width: 2556px;
@@ -84,6 +85,9 @@ a {
   }
   @media (max-width: $fourth-breakpoint) {
     display: none;
+  }
+  &--explore {
+    height: 40px;
   }
 }
 .project__images img {

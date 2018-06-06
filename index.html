@@ -25,7 +25,7 @@
         <h3 class="headline__text__subheader header-3">10</h>
         <h1 class="header-1 headline__text__header">Kween <br/> of Code</h1>
         <p class="paragraph">Hi, I’m Ky, I’m a front end web developer. My three favourite things are creative problem-solving, RuPaul’s Drag Race, and the feeling of reading a beautiful sentence. My character is best defined by the fact that I always count my groceries before using the speedy lane and that I have yet to meet a dog that doesn't like me. My laugh is too loud and too regular for me to ever survive in a horror movie. I genuinely and stubbornly refuse to believe that anything is impossible.</p>
-        <p class="paragraph paragraph--uppercase"><a href="#recommendem">Explore More <button class="btn"><i class="fa fa-angle-right"></i></button></a>
+        <a href="#recommendem"><button class="btn btn--explore"><i class="fa fa-angle-right"></i></button></a>
       </div>
     </div>
     <div class="wrapper main-social">
@@ -52,10 +52,10 @@
     </ul>
   </div>
   <!-- 01 - Recommendem - React Project -->
-  <section class="wrapper project" id="recommendem">
+  <section class="wrapper project">
     <h1 class="header-1">Portfolio</h1>
     <div>
-      <h4 class="header-4">01 - React</h4>
+      <h4 class="header-4" id="recommendem">01 - React</h4>
       <h2 class="header-2">Recommendem</h2>
       <h4 class="header-4">Built With:</h4>
       <div class="project__nav">
@@ -90,14 +90,14 @@
       </div>
       <div>
         <h3 class="header-3">Recommendem</h3>
-        <p class="paragraph paragraph--smaller">I come from the world of theatre and have a passion for improving representation and diversity, but understand that many artists don't know where to start looking to find collaborators from diverse experiences. Using React and Firebase I built a database for artists from underrepresented communities to self-identify and provide a resource for artists looking to improve the diversity of their practice.</p>
+        <p class="paragraph paragraph--smaller">I spent a number of years working in theatre where I became passionate about improving representation and diversity. I understand that one of the current obstacles is that many artists don't know where to start looking for a diversity of collaborators. Using React and Firebase I built a database for artists from underrepresented communities to self-identify.</p>
       </div>
     </div>
   </section>
   <!-- 02 - Would You Feel Better - jQuery -->
-  <section class="wrapper project" id="dress">
+  <section class="wrapper project">
     <div>
-      <h4 class="header-4">02 - jQuery</h4>
+      <h4 class="header-4" id="dress">02 - jQuery</h4>
       <h2 class="header-2">Would You Feel Better If I Wore A Dress</h2>
       <h4 class="header-4">Built With:</h4>
       <div class="project__nav">
@@ -131,14 +131,14 @@
       </div>
       <div>
         <h3 class="header-3">Would You Feel Better if I Wore a Dress?</h3>
-        <p class="paragraph paragraph--smaller">At 29 years old, 13 years after I'd come out as queer, I came out as nonbinary. I used jQuery to create an interactive quiz-like project around questions of what a nonbinary body looks like.</p>
+        <p class="paragraph paragraph--smaller">For the past two years a large portion of my writing has been devoted to exploring queerness and my body. At 29 years old, 13 years after I'd come out as queer, I came out as nonbinary and started experimenting with a femme presentation. I used jQuery to create an interactive quiz-like project to help me work through questions around what a nonbinary body looks like.</p>
       </div>
     </div>
   </section>
   <!-- 03 - Wine ON Dine ON -->
-  <section class="wrapper project" id="wine">
+  <section class="wrapper project">
     <div>
-      <h4 class="header-4">03 - React Group Project</h4>
+      <h4 class="header-4" id="wine">03 - React Group Project</h4>
       <h2 class="header-2">Wine ON Dine ON</h2>
       <h4 class="header-4">Built With:</h4>
       <div class="project__nav">
@@ -173,14 +173,14 @@
       </div>
       <div>
         <h3 class="header-3">Wine ON Dine ON</h3>
-        <p class="paragraph paragraph--smaller">I am a big advocate of treating yourself to a bottle of wine with a dinner at home. Created in collaboration with Becky Pollard and Michael Yiu, Wine ON Dine ON pairs a randomly generated VQA wine with a complementary recipe based on the serving suggestion provided by the LCBO API.</p>
+        <p class="paragraph paragraph--smaller">I am a big advocate of treating yourself to a bottle of wine with a dinner at home. Created in collaboration with Becky Pollard and Michael Yiu, Wine ON Dine ON pairs a randomly generated VQA wine with a complementary recipe from the Yummly API based on the serving suggestion provided by the LCBO API analyzed for context by the Dandelion API.</p>
       </div>
     </div>
   </section>
   <!-- 04 - MaxShop -->
-  <section class="wrapper project" id="maxshop">
+  <section class="wrapper project">
     <div>
-      <h4 class="header-4">04 - PSD Convesion</h4>
+      <h4 class="header-4" id="maxshop">04 - PSD Convesion</h4>
       <h2 class="header-2">MaxShop</h2>
       <h4 class="header-4">Built With:</h4>
       <div class="project__nav">
@@ -213,12 +213,12 @@
       </div>
       <div>
         <h3 class="header-3">MaxShop</h3>
-        <p class="paragraph paragraph--smaller">I take no credit for the design. Maxshop is a responsive PSD conversion.</p>
+        <p class="paragraph paragraph--smaller">I take no credit for the design. Maxshop is a responsive single-page website developped from a PSD.</p>
       </div>
     </div>
   </section>
-  <section class="skills" id="skills">
-    <ul class="list skills__list">
+  <section class="skills">
+    <ul class="list skills__list" id="skills">
       <li class="skills__item list__item"><img src="./images/html5.png" alt=""><p class="paragraph skills__label">HTML</p></li>
       <li class="skills__item list__item"><img src="./images/css3.png" alt=""><p class="paragraph skills__label">CSS</p></li>
       <li class="skills__item list__item"><img src="./images/sass.png" alt=""> <p class="paragraph skills__label">Sass</p></li>
@@ -233,9 +233,9 @@
     </ul>
   </section>
   <footer>
-    <div class="wrapper" id="contact">
+    <div class="wrapper">
       <div class="contact">
-        <form method="POST" action="http://www.focuspocus.io/magic/ky@kweenofcode.com" class="contact__form">
+        <form method="POST" id="contact" action="http://www.focuspocus.io/magic/ky@kweenofcode.com" class="contact__form">
           <h2 class="header-2 contact__headline">Get in Touch</h2>
           <div><a class="contact__email" href="mailto:ky@kweenofcode.com"><i class="fa fa-envelope"></i>
             <p class="paragraph paragraph--large contact__email__address">ky@kweenofcode.com</p></a>
@@ -265,7 +265,7 @@
       </div>
     </div>
   </footer>
-  
+   <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
 	<script src="./public/scripts/main.js"></script>
   
 </body>
