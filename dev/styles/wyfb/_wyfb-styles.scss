@@ -98,8 +98,10 @@ body.wyfb {
   @media (max-width: $wyfb-third-breakpoint) {
     padding: 50px;
   }
-  @media (max-width: $wyfb-third-breakpoint) {
-    padding: 50px 50px;
+  @media (max-width: $wyfb-fourth-breakpoint) {
+    width: 100%;
+    padding: 10px;
+
   }
 }
 .wyfb__button {
