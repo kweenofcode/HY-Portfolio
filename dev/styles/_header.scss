@@ -29,7 +29,9 @@
 		top: 20px;
   }
   &__logo {
-    max-width: 150px;
+    max-width: 100px;
+    position: fixed;
+    left: 25px;
     @media (max-width: $fifth-breakpoint) {
       display: none;
     }
@@ -127,11 +129,11 @@
   }
 }
 .main-social {
-  position: absolute;
+  position: fixed;
   display: flex;
   width: 100%;
   bottom: 30px;
-  left: -50px;
+  left: 40px;
   &__list {
     position: absolute;
     bottom: 0px;
@@ -167,6 +169,7 @@
   @media (max-width: $fifth-breakpoint) {
     bottom: 20px;
     left: -20px;
+    position: static;
   }
   @media (max-width: $sixth-breakpoint) {
     bottom: 0;
